@@ -19,6 +19,6 @@ def main():
         else:
             current = s[i + 1]    
     i += 1
-    print (longest)
+    print(longest)
 if __name__ == "__main__":
     main()
