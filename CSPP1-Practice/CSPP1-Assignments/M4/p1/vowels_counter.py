@@ -6,13 +6,13 @@ Encoding: UTF-8
 def main():
     """this function prints the number of \
     vowles in the input string"""
-    s = input()
-    v = ['a', 'e', 'i', 'o', 'u']
-    vc = 0
-    for i in s:
-        if i in v:
-            vc += 1
-    print(vc)
+    S = input()
+    V = ['a', 'e', 'i', 'o', 'u']
+    VC = 0
+    for i in S:
+        if i in V:
+            VC += 1
+    print(VC)
 
 if __name__ == "__main__":
     main()
