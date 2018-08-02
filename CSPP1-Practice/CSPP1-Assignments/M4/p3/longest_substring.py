@@ -17,7 +17,7 @@ def main():
                 maxLen = len(current)
                 longest = current
         else:
-            current = s[i + 1]    
+            current = s[i + 1]
     i += 1
     print(longest)
 if __name__ == "__main__":
