@@ -13,7 +13,7 @@ def main():
     for i in range(0, len(s_t)-1):
         if s_t[i+1] >= s_t[i]:
             curre_point += s_t[i]
-            if len(curre_point) > M_L:
+            if len(curre_point) > m_l:
                 m_l = len(curre_point)
                 next_point = curre_point
         else:
