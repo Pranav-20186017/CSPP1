@@ -3,10 +3,14 @@
 # returns the factorial of given number.
 
 # This function takes in one number and returns one number.
-
+'''
+Author: Pranav SUrampudi
+Date: 2-Aug-2018
+Encdoing: UTF-8
+'''
 def main():
     data = input()
-    print(int(data[0])+int(data[3]))
+    print(int(data[0]) + int(data[3]))
 
 if __name__ == "__main__":
     main()
