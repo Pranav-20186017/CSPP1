@@ -13,5 +13,5 @@ def main():
 			b_c += 1
 	print(b_c)
 
-if __name__== "__main__":
+if __name__ == "__main__":
 	main()
