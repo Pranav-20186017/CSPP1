@@ -10,8 +10,7 @@ Date: 2 August 2018
 Encoding: UTF-8
 '''
 def main():
-	"""this function prints the number of vowles \
-	 in the input string"""
+	"""this function prints the number of vowles in the input string"""
 	s = raw_input()
 	v = ['a','e','i','o','u']
     vc = 0
