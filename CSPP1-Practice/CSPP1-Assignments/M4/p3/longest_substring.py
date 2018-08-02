@@ -6,18 +6,18 @@ Encding: UTF-8
 def main():
     """This function prints the longest substring that
      follows the alphabetical order in a given string"""
-    s = input()
+    s_t = input()
     maxLen = 0
-    current = s[0]
-    longest = s[0]
-    for i in range(len(s) - 1):
-        if s[i + 1] >= s[i]:
+    current = s_t[0]
+    longest = s_t[0]
+    for i in range(len(s_t) - 1):
+        if s_t[i + 1] >= s_t[i]:
             current += s[i + 1]
             if len(current) > maxLen:
                 maxLen = len(current)
                 longest = current
         else:
-            current = s[i + 1]
+            current = s_t[i + 1]
     i += 1
     print(longest)
 if __name__ == "__main__":
