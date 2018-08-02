@@ -1,24 +1,24 @@
-'''Assume s is a string of lower case characters.
-
-Write a program that prints the longest substring of s in which the letters occur in alphabetical order.
-For example, if s = 'azcbobobegghakl', then your program should print
-
-Longest substring in alphabetical order is: beggh
-
-In the case of ties, print the first substring.
-For example, if s = 'abcbcd', then your program should print
-
-Longest substring in alphabetical order is: abc
-
-Note: This problem may be challenging. We encourage you to work smart.
-If you've spent more than a few hours on this problem, we suggest that you move on to a different part of the course.
-If you have time, come back to this problem after you've had a break and cleared your head.'''
-
+'''
+Author: Pranav Surampudi
+Date: 2 August 2018
+Encding: UTF-8
+'''
 def main():
-	s = raw_input()
-	# the input string is in s
-	# remove pass and start your code here
-	pass
-
-if __name__== "__main__":
-	main()
+	"""This fucntion computes the longest substring, 
+	that is in alphabetical order in a given string"""
+    s_t = input()
+    m_l = 0
+    curre_point = s_t[0]
+    next_point = s_t[0]
+    for i in range(0, len(s_t)-1):
+        if s_t[i+1] >= s_t[i]:
+            curre_point += s_t[i]
+            if len(curre_point) > M_L:
+                m_l = len(curre_point)
+                next_point = curre_point
+        else:
+            curre_point = s_t[i+1]
+        i = i + 1
+    print(next_point)
+if __name__ == "__main__":
+    main()
