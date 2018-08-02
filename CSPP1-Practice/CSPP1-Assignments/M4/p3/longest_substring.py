@@ -19,6 +19,6 @@ def main():
         else:
             current=s[i + 1]    
     i += 1
-    print ('Longest substring in alphabetical order is: ' + longest)
+    print (longest)
 if __name__ == "__main__":
     main()
