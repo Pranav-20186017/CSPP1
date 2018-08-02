@@ -11,7 +11,7 @@ Encoding: UTF-8
 '''
 def main():
 	"""this function prints the number of vowles in the input string"""
-	s = raw_input()
+	s = input()
 	v = ['a','e','i','o','u']
     vc = 0
     for i in s:
