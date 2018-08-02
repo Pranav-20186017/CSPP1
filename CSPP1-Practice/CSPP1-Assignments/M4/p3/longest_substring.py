@@ -4,7 +4,7 @@ Date: 2 August 2018
 Encding: UTF-8
 '''
 def main():
-    """This fucntion computes the longest substring, 
+    """This fucntion computes the longest substring,
     that is in alphabetical order in a given string"""
     s_t = input()
     m_l = 0
