@@ -19,6 +19,6 @@ def main():
         else:
             cu_st = s_t[i + 1]
         i += 1
-print (longest)
+print (lo_st)
 if __name__ == "__main__":
     main()
