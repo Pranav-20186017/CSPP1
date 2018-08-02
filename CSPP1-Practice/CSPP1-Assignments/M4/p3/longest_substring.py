@@ -10,6 +10,7 @@ def main():
     maxLen = 0
     current = s_t[0]
     longest = s_t[0]
+    i = 0
     for i in range(len(s_t) - 1):
         if s_t[i + 1] >= s_t[i]:
             current += s_t[i + 1]
