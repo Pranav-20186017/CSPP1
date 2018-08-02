@@ -14,7 +14,7 @@ def main():
     for i in range(len(s_t) - 1):
         if s_t[i + 1] >= s_t[i]:
             current_point += s_t[i + 1]
-            if len(current) > max_len:
+            if len(current_point) > max_len:
                 max_len = len(current_point)
                 next_point = current_point
         else:
