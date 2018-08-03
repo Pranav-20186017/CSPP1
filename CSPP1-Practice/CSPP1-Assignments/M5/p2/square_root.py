@@ -9,11 +9,14 @@ def main():
     square = input()
     epsilon = 0.01
     guess = 0.0
-    increment = 0.1
-    while abs(guess**2 - square) >= epsilon:
-        guess += increment
-    if abs(guess**2 - square) >= epsilon:
-        print('Failed to find the square root of', square)
+    step = 0.1
+    while abs(guess ** 2 - square) >= epsilon:
+        if guess <= square:
+            guess += step
+        else:
+            break
+    if abs(guess ** 2 - square) >= epsilon:
+        print("Failed to compute the square root")
     else:
         print(guess)
 if __name__ == "__main__":
