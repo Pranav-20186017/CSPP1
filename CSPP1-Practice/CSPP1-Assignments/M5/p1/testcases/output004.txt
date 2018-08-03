@@ -1,1 +1,1 @@
-343 is a perfect cube
+343 is not a perfect cube
