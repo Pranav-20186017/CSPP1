@@ -6,7 +6,7 @@ Encoding: UTF-8
 def main():
     """This fucntion checks whether or not
     a given number is a perfect cube"""
-    n_a = input()
+    n_a = int(input())
     t_a = 0
     for i in range(1, n_a+1, 1):
         if i**3 == n_a:
