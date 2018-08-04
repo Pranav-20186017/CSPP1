@@ -1,0 +1,70 @@
+########## Testcase 0: Passed ##########
+Expected Output: 
+6
+
+Your Output: 
+6
+
+----------------------------------------
+########## Testcase 1: Passed ##########
+Expected Output: 
+0
+
+Your Output: 
+0
+
+----------------------------------------
+########## Testcase 2: Failed ##########
+Expected Output: 
+-120
+
+Your Output: 
+
+
+----------------------------------------
+########## Testcase 3: Failed ##########
+Expected Output: 
+0
+
+Your Output: 
+1
+
+----------------------------------------
+########## Testcase 4: Failed ##########
+Expected Output: 
+0
+
+Your Output: 
+1
+
+----------------------------------------
+########## Testcase 5: Passed ##########
+Expected Output: 
+0
+
+Your Output: 
+0
+
+----------------------------------------
+########## Testcase 6: Passed ##########
+Expected Output: 
+26343258099627654327931534826024187097499630353514496000000000000
+
+Your Output: 
+26343258099627654327931534826024187097499630353514496000000000000
+
+----------------------------------------
+Result: 4/7 testcases passed.
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+[u'10.00']
+
+[master d120b5f] " -> 4 of 7 passed. pylint: 10.00/10 "
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ create mode 100644 CSPP1-Practice/CSPP1-Assignments/M6/p3/test.txt
+
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+

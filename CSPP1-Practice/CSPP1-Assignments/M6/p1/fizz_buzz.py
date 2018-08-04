@@ -20,7 +20,8 @@ def main():
         elif i % 5 == 0:
             print("Buzz")
         elif i % 3 == 0 and i % 5 == 0:
-            print("FizzBuzz")
+            print("Fizz")
+            print("Buzz")
         else:
             print(i)
 if __name__ == "__main__":
