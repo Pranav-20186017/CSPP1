@@ -23,6 +23,5 @@ def main():
             print("FizzBuzz")
         else:
             print(i)
-    print(st)
 if __name__ == "__main__":
     main()
