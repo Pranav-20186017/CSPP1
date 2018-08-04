@@ -1,0 +1,70 @@
+########## Testcase 0: Passed ##########
+Expected Output: 
+abcdef
+
+Your Output: 
+abcdef
+
+----------------------------------------
+########## Testcase 1: Passed ##########
+Expected Output: 
+    a
+
+Your Output: 
+    a
+
+----------------------------------------
+########## Testcase 2: Passed ##########
+Expected Output: 
+a b d e
+
+Your Output: 
+a b d e
+
+----------------------------------------
+########## Testcase 3: Passed ##########
+Expected Output: 
+abcd    defgh    ./,;'[]'
+
+Your Output: 
+abcd    defgh    ./,;'[]'
+
+----------------------------------------
+########## Testcase 4: Passed ##########
+Expected Output: 
+
+
+Your Output: 
+
+
+----------------------------------------
+########## Testcase 5: Passed ##########
+Expected Output: 
+M itc1hL pa  w0rd
+
+Your Output: 
+M itc1hL pa  w0rd
+
+----------------------------------------
+########## Testcase 6: Passed ##########
+Expected Output: 
+1 a2 b3 c4 d5 e6 f7 g8 i
+
+Your Output: 
+1 a2 b3 c4 d5 e6 f7 g8 i
+
+----------------------------------------
+Result: 7/7 testcases passed.
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+
+
+[u'10.00']
+
+[master 549b3d5] " -> 7 of 7 passed. pylint: 10.00/10 "
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ create mode 100644 CSPP1-Practice/CSPP1-Assignments/M6/p2/test.txt
+
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
