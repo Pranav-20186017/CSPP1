@@ -14,7 +14,6 @@ def main():
     Read number from the input, store it in variable num.
     '''
     num = int(input())
-    st = ""
     for i in range(1, num+1, 1):
         if i % 3 == 0:
             print("Fizz")
