@@ -13,12 +13,22 @@ def main():
     Read any number from the input, store it in variable int_input.
     '''
     int_input = int(input())
+    flag = 0
     num = int_input
     product = 1
+    if num == 0:
+        print(num)
+        exit()
+    if num < 0:
+        flag = flag +1
+        num = num * -1
     while num != 0:
         temp = num % 10
-        product *= temp
-        num //= 10
-    print(product)
+        product = product * temp
+        num = num // 10
+    if flag == 0:
+        print(product)
+    else:
+        print(product * -1)
 if __name__ == "__main__":
     main()
