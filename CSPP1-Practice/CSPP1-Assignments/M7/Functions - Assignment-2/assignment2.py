@@ -9,7 +9,8 @@
 # The following variables contain values as described below:
 # balance - the outstanding balance on the credit card
 # annualInterestRate - annual interest rate as a decimal
-# The program should print out one line: the lowest monthly payment that will pay off all debt in under 1 year, for example:
+# The program should print out one line: 
+#the lowest monthly payment that will pay off all debt in under 1 year, for example:
 # Lowest Payment: 180
 # Assume that the interest is compounded monthly 
 #according to the balance at the end of the month (after the payment for that month is
