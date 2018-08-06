@@ -9,13 +9,14 @@
 # The following variables contain values as described below:
 # balance - the outstanding balance on the credit card
 # annualInterestRate - annual interest rate as a decimal
-# The program should print out one line: 
+# The program should print out one line:
 #the lowest monthly payment that will pay off all debt in under 1 year, for example:
 # Lowest Payment: 180
-# Assume that the interest is compounded monthly 
+# Assume that the interest is compounded monthly
 #according to the balance at the end of the month (after the payment for that month is
 # made).
-# The monthly payment must be a multiple of $10 and is the same for all months. Notice that it is possible for the balance to become
+# The monthly payment must be a multiple of $10 and is the same for all months.
+# Notice that it is possible for the balance to become
 # negative using this payment scheme, which is okay. A summary of the required math is found below:
 # Monthly interest rate = (Annual interest rate) / 12.0
 # Monthly unpaid balance = (Previous balance) - (Minimum fixed monthly payment)
@@ -39,7 +40,7 @@ def payingDebtOffInAYear(balance, annualInterestRate):
         while month <= 12 and newbalance > 0:
             newbalance -= monthlyPayment
             newbalance += (monthlyInterestRate * newbalance)
-            month += 1    
+            month += 1
     print("Lowest Payment:",monthlyPayment)
 def main():
     ''' Main function'''
