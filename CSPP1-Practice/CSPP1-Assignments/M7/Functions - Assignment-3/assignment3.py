@@ -10,6 +10,7 @@ def paying_debt_off_in_a_year(balance, annual):
     lower = balance / 12.0
     upper = balance * (1 + annual / 12.0) ** 12 / 12
     fixed = (lower + upper) / 2.0
+    i = 1
     while True:
         remain = balance
         for i in range(1, 13):
