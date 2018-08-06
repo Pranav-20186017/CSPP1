@@ -47,7 +47,6 @@ def main():
     data = input()
     data = data.split(' ')
     data = list(map(float, data))
-    (payingDebtOffInAYear(data[0], data[1]))
-    
-if __name__== "__main__":
+    (payingDebtOffInAYear(data[0], data[1])) 
+if __name__ == "__main__":
     main()
