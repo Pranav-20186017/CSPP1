@@ -33,5 +33,3 @@ def main():
     paying_debt_off_in_a_year(data[0], data[1])
 if __name__ == "__main__":
     main()
-assignment3.py
-Displaying assignment3.py.
