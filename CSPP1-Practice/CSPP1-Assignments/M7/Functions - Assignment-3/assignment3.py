@@ -17,7 +17,7 @@ def paying_debt_off_in_a_year(balance, annual):
             i += 1 ##writen jsut to satisfy pylint, code has no effect
         if remain > 0:
             lower = fixed
-        elif -0.0001 <= remain <= 0:
+        elif -0.03 <= remain <= 0:
             break
         else:
             upper = fixed
