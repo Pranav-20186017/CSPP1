@@ -8,7 +8,7 @@ Encoding: utf-8
 def paying_debt_off_in_a_year(balance, annual):
     """Calculate minimum payment by bisection"""
     lower = balance / 12.0
-    upper =  balance * (1 + annual / 12.0) ** 12 / 12
+    upper = balance * (1 + annual / 12.0) ** 12 / 12
     fixed = (lower + upper) / 2.0
     while True:
         remain = balance
@@ -30,5 +30,5 @@ def main():
     data = data.split(' ')
     data = list(map(float, data))
     paying_debt_off_in_a_year(data[0], data[1])   
-if __name__== "__main__":
+if __name__ == "__main__":
     main()
