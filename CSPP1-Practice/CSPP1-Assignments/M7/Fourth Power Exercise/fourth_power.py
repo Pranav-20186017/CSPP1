@@ -16,8 +16,7 @@ def square(x_var):
     return x_var ** 2
 def fourth_power(x_var):
     """Computes the fourth power of a given number"""
-    temp = square(x_var)
-    return temp ** 2
+    return square(square(x_var))
 def main():
     """Main Function"""
     data = input()
