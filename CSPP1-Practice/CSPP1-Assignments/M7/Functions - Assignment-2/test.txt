@@ -1,0 +1,118 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+Lowest Payment: 310
+
+Your Output: 
+Lowest Payment: 10
+
+----------------------------------------
+########## Testcase 1: Failed ##########
+Expected Output: 
+Lowest Payment: 440
+
+Your Output: 
+Lowest Payment: 10
+
+----------------------------------------
+########## Testcase 2: Passed ##########
+Expected Output: 
+Lowest Payment: 0
+
+Your Output: 
+Lowest Payment: 0
+
+----------------------------------------
+########## Testcase 3: Failed ##########
+Expected Output: 
+Lowest Payment: 2920
+
+Your Output: 
+Lowest Payment: 10
+
+----------------------------------------
+########## Testcase 4: Failed ##########
+Expected Output: 
+Lowest Payment: 2060
+
+Your Output: 
+Lowest Payment: 10
+
+----------------------------------------
+########## Testcase 5: Failed ##########
+Expected Output: 
+Lowest Payment: 7400
+
+Your Output: 
+Lowest Payment: 10
+
+----------------------------------------
+########## Testcase 6: Failed ##########
+Expected Output: 
+Lowest Payment: 50
+
+Your Output: 
+Lowest Payment: 10
+
+----------------------------------------
+########## Testcase 7: Passed ##########
+Expected Output: 
+Lowest Payment: 0
+
+Your Output: 
+Lowest Payment: 0
+
+----------------------------------------
+########## Testcase 8: Failed ##########
+Expected Output: 
+Lowest Payment: 4920
+
+Your Output: 
+Lowest Payment: 10
+
+----------------------------------------
+########## Testcase 9: Failed ##########
+Expected Output: 
+Lowest Payment: 1150
+
+Your Output: 
+Lowest Payment: 10
+
+----------------------------------------
+Result: 2/10 testcases passed.
+************* Module assignment2
+assignment2.py:3:0: C0301: Line too long (135/100) (line-too-long)
+assignment2.py:4:0: C0301: Line too long (133/100) (line-too-long)
+assignment2.py:13:0: C0301: Line too long (124/100) (line-too-long)
+assignment2.py:16:0: C0301: Line too long (134/100) (line-too-long)
+assignment2.py:18:0: C0301: Line too long (132/100) (line-too-long)
+assignment2.py:22:0: C0301: Line too long (106/100) (line-too-long)
+assignment2.py:34:18: C0326: Exactly one space required after assignment
+            month +=1
+                  ^^ (bad-whitespace)
+assignment2.py:35:0: C0325: Unnecessary parens after 'return' keyword (superfluous-parens)
+assignment2.py:41:38: C0326: Exactly one space required after comma
+    print(payingDebtOffInAYear(data[0],data[1]))
+                                      ^ (bad-whitespace)
+assignment2.py:42:0: C0303: Trailing whitespace (trailing-whitespace)
+assignment2.py:43:11: C0326: Exactly one space required before comparison
+if __name__== "__main__":
+           ^^ (bad-whitespace)
+assignment2.py:44:0: C0304: Final newline missing (missing-final-newline)
+assignment2.py:1:0: C0111: Missing module docstring (missing-docstring)
+assignment2.py:23:0: C0103: Function name "payingDebtOffInAYear" doesn't conform to snake_case naming style (invalid-name)
+assignment2.py:23:0: C0103: Argument name "annualInterestRate" doesn't conform to snake_case naming style (invalid-name)
+assignment2.py:23:0: C0111: Missing function docstring (missing-docstring)
+assignment2.py:37:0: C0111: Missing function docstring (missing-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 1.50/10 (previous run: 1.50/10, +0.00)
+
+
+[u'1.50']
+
+[master 12f8a2c] " -> 2 of 10 passed. pylint: 1.50/10 "
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ create mode 100644 CSPP1-Practice/CSPP1-Assignments/M7/Functions - Assignment-2/test.txt
+
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
