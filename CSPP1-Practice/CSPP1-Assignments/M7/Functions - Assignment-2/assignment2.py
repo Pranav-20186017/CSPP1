@@ -32,7 +32,7 @@ def payingDebtOffInAYear(balance, annualInterestRate):
             new_balance -= monthy_payment
             new_balance = (monthly_intrest_rate * new_balance)
             month +=1
-    return ("Lowest Payment: ", str(monthy_payment))
+    return ("Lowest Payment: "+ str(monthy_payment))
 
 def main():
     data = input()
