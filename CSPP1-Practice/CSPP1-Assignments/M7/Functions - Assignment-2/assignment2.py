@@ -29,7 +29,7 @@ Date: 6 August 2018
 Encoding: utf - 8
 ************************
 '''
-def payingDebtOffInAYear(balance, annualInterestRate):
+def paying_debt_off_in_a_year(balance, annualInterestRate):
     '''compute the lowest monthly payment '''
     monthlyInterestRate = annualInterestRate/12
     monthlyPayment = 0
@@ -49,6 +49,6 @@ def main():
     data = input()
     data = data.split(' ')
     data = list(map(float, data))
-    (payingDebtOffInAYear(data[0], data[1]))
+    paying_debt_off_in_a_year(data[0], data[1])
 if __name__ == "__main__":
     main()
