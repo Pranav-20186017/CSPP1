@@ -1,0 +1,97 @@
+########## Testcase 0: Passed ##########
+Expected Output: 
+Lowest Payment: 303.32
+
+Your Output: 
+Lowest Payment: 303.32
+
+----------------------------------------
+########## Testcase 1: Failed ##########
+Expected Output: 
+Lowest Payment: 434.89
+
+Your Output: 
+Lowest Payment: 434.9
+
+----------------------------------------
+########## Testcase 2: Passed ##########
+Expected Output: 
+Lowest Payment: 96.66
+
+Your Output: 
+Lowest Payment: 96.66
+
+----------------------------------------
+########## Testcase 3: Passed ##########
+Expected Output: 
+Lowest Payment: 2913.46
+
+Your Output: 
+Lowest Payment: 2913.46
+
+----------------------------------------
+########## Testcase 4: Passed ##########
+Expected Output: 
+Lowest Payment: 2058.26
+
+Your Output: 
+Lowest Payment: 2058.26
+
+----------------------------------------
+########## Testcase 5: Passed ##########
+Expected Output: 
+Lowest Payment: 7390.96
+
+Your Output: 
+Lowest Payment: 7390.96
+
+----------------------------------------
+########## Testcase 6: Passed ##########
+Expected Output: 
+Lowest Payment: 44.1
+
+Your Output: 
+Lowest Payment: 44.1
+
+----------------------------------------
+########## Testcase 7: Passed ##########
+Expected Output: 
+Lowest Payment: 3982.49
+
+Your Output: 
+Lowest Payment: 3982.49
+
+----------------------------------------
+########## Testcase 8: Failed ##########
+Expected Output: 
+Lowest Payment: 4912.18
+
+Your Output: 
+Lowest Payment: 4912.19
+
+----------------------------------------
+########## Testcase 9: Passed ##########
+Expected Output: 
+Lowest Payment: 1144.07
+
+Your Output: 
+Lowest Payment: 1144.07
+
+----------------------------------------
+Result: 8/10 testcases passed.
+************* Module assignment3
+assignment3.py:20:13: R1716: Simplify chained comparison between the operands (chained-comparison)
+assignment3.py:13:4: W0612: Unused variable 'i' (unused-variable)
+
+------------------------------------------------------------------
+Your code has been rated at 9.17/10 (previous run: 9.17/10, +0.00)
+
+
+[u'9.17']
+
+[master 3d4a5f3] " -> 8 of 10 passed. pylint: 9.17/10 "
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ create mode 100644 CSPP1-Practice/CSPP1-Assignments/M7/Functions - Assignment-3/test.txt
+
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
