@@ -38,7 +38,7 @@ def paying_debt_off_in_a_year(balance, annual_interest_rate, monthly_payment_rat
         mub = balance_copy - mmp
         balance_copy = mub + (mir * mub)
         i += 1
-    return "Remaining balance: " + str(round(balance_copy,2))
+    return "Remaining balance: " + str(round(balance_copy, 2))
 def main():
     """Main Method"""
     data = input()
