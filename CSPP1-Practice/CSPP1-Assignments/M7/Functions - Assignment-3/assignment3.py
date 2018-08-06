@@ -14,6 +14,7 @@ def paying_debt_off_in_a_year(balance, annual):
         remain = balance
         for i in range(1, 13):
             remain = (remain - fixed) * (1 + annual / 12.0)
+            i+=1
         if remain > 0:
             lower = fixed
         elif -0.0001 <= remain <= 0:
