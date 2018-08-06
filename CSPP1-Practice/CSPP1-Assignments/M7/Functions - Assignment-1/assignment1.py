@@ -32,7 +32,7 @@ def paying_debt_off_in_a_year(balance, annual_interest_rate, monthly_payment_rat
     """Cacluate the monthly payment and remaining balance"""
     balance_copy = balance
     i = 1
-    while i<= 12:
+    while i <= 12:
     	mir = annual_interest_rate / 12
     	mmp = monthly_payment_rate * balance_copy
     	mub = balance_copy - mmp
