@@ -1,3 +1,33 @@
+
+Conversation opened. 1 read message.
+
+Skip to content
+Using Msitprogram.net Mail with screen readers
+in:sent 
+
+Move to Inbox More 
+1 of 45
+ 
+assignment code
+
+Pranav Surampudi 20186017 <sharmapranav307@msitprogram.net>
+Attachments7:12 PM (2 hours ago)
+to rishikaharitha 
+
+
+-- 
+Regards,
+Pranav Surampudi
+2 Attachments
+    
+Click here to Reply or Forward
+Using 0.5 GB
+Program Policies
+Powered by Google
+Last account activity: 1 hour ago
+Details
+
+
 '''
 ************************
 Author: Pranav Surampudi
@@ -10,14 +40,14 @@ def paying_debt_off_in_a_year(balance, annual):
     lower = balance / 12.0
     upper = balance * (1 + annual / 12.0) ** 12 / 12
     fixed = (lower + upper) / 2.0
+    i = 1
     while True:
         remain = balance
         for i in range(1, 13):
             remain = (remain - fixed) * (1 + annual / 12.0)
-            i += 1 ##writen jsut to satisfy pylint, code has no effect
         if remain > 0:
             lower = fixed
-        elif -0.03 <= remain <= 0:
+        elif remain <= 0 and remain >= -0.03:
             break
         else:
             upper = fixed
@@ -33,3 +63,5 @@ def main():
     paying_debt_off_in_a_year(data[0], data[1])
 if __name__ == "__main__":
     main()
+assignment3.py
+Displaying assignment3.py.
