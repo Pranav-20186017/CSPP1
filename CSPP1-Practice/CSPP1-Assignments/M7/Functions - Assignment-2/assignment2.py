@@ -29,20 +29,20 @@ Date: 6 August 2018
 Encoding: utf - 8
 ************************
 '''
-def paying_debt_off_in_a_year(balance, annualInterestRate):
+def paying_debt_off_in_a_year(balance, annual_interestRate):
     '''compute the lowest monthly payment '''
-    monthlyInterestRate = annualInterestRate/12
-    monthlyPayment = 0
+    monthlyInterestRate = annual_interestRate/12
+    monthly_payment = 0
     newbalance = balance
     while newbalance > 0:
-        monthlyPayment += 10
+        monthly_payment += 10
         newbalance = balance
         month = 1
         while month <= 12 and newbalance > 0:
-            newbalance -= monthlyPayment
+            newbalance -= monthly_payment
             newbalance += (monthlyInterestRate * newbalance)
             month += 1
-    ans = "Lowest Payment: " + str(monthlyPayment)
+    ans = "Lowest Payment: " + str(monthly_payment)
     print(ans)
 def main():
     ''' Main function'''
