@@ -1,33 +1,3 @@
-
-Conversation opened. 1 read message.
-
-Skip to content
-Using Msitprogram.net Mail with screen readers
-in:sent 
-
-Move to Inbox More 
-1 of 45
- 
-assignment code
-
-Pranav Surampudi 20186017 <sharmapranav307@msitprogram.net>
-Attachments7:12 PM (2 hours ago)
-to rishikaharitha 
-
-
--- 
-Regards,
-Pranav Surampudi
-2 Attachments
-    
-Click here to Reply or Forward
-Using 0.5 GB
-Program Policies
-Powered by Google
-Last account activity: 1 hour ago
-Details
-
-
 '''
 ************************
 Author: Pranav Surampudi
