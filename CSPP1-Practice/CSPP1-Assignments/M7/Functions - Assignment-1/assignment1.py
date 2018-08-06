@@ -33,13 +33,12 @@ def paying_debt_off_in_a_year(balance, annual_interest_rate, monthly_payment_rat
     balance_copy = balance
     i = 1
     while i <= 12:
-    	mir = annual_interest_rate / 12
-    	mmp = monthly_payment_rate * balance_copy
-    	mub = balance_copy - mmp
-    	balance_copy = mub + (mir * mub)
-    	i += 1
+        mir = annual_interest_rate / 12
+        mmp = monthly_payment_rate * balance_copy
+        mub = balance_copy - mmp
+        balance_copy = mub + (mir * mub)
+        i += 1
     return "Remaining balance: " + str(round(balance_copy,2))
-    
 def main():
     """Main Method"""
     data = input()
