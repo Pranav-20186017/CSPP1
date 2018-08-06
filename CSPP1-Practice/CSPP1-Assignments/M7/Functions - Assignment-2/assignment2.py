@@ -20,7 +20,8 @@
 # negative using this payment scheme, which is okay. A summary of the required math is found below:
 # Monthly interest rate = (Annual interest rate) / 12.0
 # Monthly unpaid balance = (Previous balance) - (Minimum fixed monthly payment)
-# Updated balance each month = (Monthly unpaid balance) + (Monthly interest rate x Monthly unpaid balance)
+# Updated balance each month = 
+#(Monthly unpaid balance) + (Monthly interest rate x Monthly unpaid balance)
 '''
 ************************
 Author: Pranav Surampudi
