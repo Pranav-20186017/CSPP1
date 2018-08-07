@@ -7,6 +7,8 @@ Encoding: Utf-8
 """
 def recur_power(base, exp):
     """Compute expoent using recursion"""
+    if exp == 0:
+    	return 1
     if exp == 1:
         return base * 1
     if exp != 1:
