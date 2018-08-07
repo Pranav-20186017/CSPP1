@@ -12,7 +12,7 @@ def sumofdigits(number):
     return number % 10 + sumofdigits(number // 10)
 def main():
     """Inside Main Function"""
-    a = input()
-    print(sumofdigits(int(a))) 
+    a_vae = input()
+    print(sumofdigits(int(a_var))
 if __name__ == "__main__":
     main()
