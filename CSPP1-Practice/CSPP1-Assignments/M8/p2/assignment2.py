@@ -13,6 +13,6 @@ def sumofdigits(number):
 def main():
     """Main Function"""
     a_var = input()
-    print(sumofdigits(int(a_var)))  
+    print(sumofdigits(int(a_var)))
 if __name__ == "__main__":
     main()
