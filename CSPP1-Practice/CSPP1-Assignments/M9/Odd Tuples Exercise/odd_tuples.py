@@ -18,7 +18,7 @@ def main():
     data = data.split()
     a_tup = ()
     for j in data:
-        a_tup += ((j),)
+        a_tup += (j,)
     print(odd_tuples(a_tup))
 if __name__ == "__main__":
     main()
