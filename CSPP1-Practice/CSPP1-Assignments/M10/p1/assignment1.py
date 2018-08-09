@@ -12,10 +12,10 @@ Encoding: utf-8
 def get_available_letters(letters_guessed):
     """Return the values that are not in the guessed letters,
     but are a part of the alphabetical order"""
-    alpha = "abcdefghijklmnopqrstuvwxyz"
+    alpha = list("abcdefghijklmnopqrstuvwxyz")
     ans_string = ""
     for i in alpha:
-        if i not in letters_guessed:
+        if i not in list(letters_guessed):
             ans_string += i
     return ans_string
 def main():
