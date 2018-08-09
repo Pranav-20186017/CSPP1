@@ -10,15 +10,14 @@ Date: 9 August 2018
 Encoding: utf-8
 '''
 def get_available_letters(letters_guessed):
-    """Return the values that are not in the guessed letters, 
+    """Return the values that are not in the guessed letters,
     but are a part of the alphabetical order"""
-    temp_list = list(letters_guessed).sort()
-    al = list("abcdefghijklmnopqrstuvwxyz")
-    s = "" 
-    for i in al:
+    alpha = list("abcdefghijklmnopqrstuvwxyz")
+    ans_string = ""
+    for i in alpha:
         if i not in letters_guessed:
-            s += i
-    return s
+            ans_string += i
+    return ans_string
 def main():
     '''
     Main function for the given program
