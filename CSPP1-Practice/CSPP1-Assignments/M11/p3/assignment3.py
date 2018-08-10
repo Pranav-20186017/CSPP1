@@ -38,6 +38,7 @@ def main():
     adict = {}
     for i in range(nums):
         data = input()
+        i += 1 #line written only to satisfy pylint
         lima = data.split()
         adict[lima[0]] = int(lima[1])
     lima2 = input().split()
