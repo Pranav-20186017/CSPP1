@@ -14,7 +14,6 @@ def is_valid_word(word, hand, word_list):
     hand: dictionary (string -> int)
     wordList: list of lowercase strings
     """
-    # TO DO ... <-- Remove this comment when you code this function
     list_t = list(hand.keys())
     flag = 0
     count = 0
@@ -33,6 +32,7 @@ def is_valid_word(word, hand, word_list):
         return True
     return False
 def main():
+    """Main Fuction"""
     word = input()
     n = int(input())
     adict = {}
