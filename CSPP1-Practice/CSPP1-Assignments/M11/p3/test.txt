@@ -1,0 +1,129 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+False
+
+Your Output: 
+Traceback (most recent call last):
+  File "assignment3.py", line 54, in <module>
+    main()
+  File "assignment3.py", line 49, in main
+    print(isValidWord(word,adict,l2))
+  File "assignment3.py", line 28, in isValidWord
+    for i in t:
+UnboundLocalError: local variable 't' referenced before assignment
+
+----------------------------------------
+########## Testcase 1: Failed ##########
+Expected Output: 
+False
+
+Your Output: 
+Traceback (most recent call last):
+  File "assignment3.py", line 54, in <module>
+    main()
+  File "assignment3.py", line 49, in main
+    print(isValidWord(word,adict,l2))
+  File "assignment3.py", line 28, in isValidWord
+    for i in t:
+TypeError: 'NoneType' object is not iterable
+
+----------------------------------------
+########## Testcase 2: Failed ##########
+Expected Output: 
+True
+
+Your Output: 
+Traceback (most recent call last):
+  File "assignment3.py", line 54, in <module>
+    main()
+  File "assignment3.py", line 49, in main
+    print(isValidWord(word,adict,l2))
+  File "assignment3.py", line 28, in isValidWord
+    for i in t:
+TypeError: 'NoneType' object is not iterable
+
+----------------------------------------
+Result: 0/3 testcases passed.
+************* Module assignment3
+assignment3.py:3:0: C0301: Line too long (448/100) (line-too-long)
+assignment3.py:5:0: C0301: Line too long (345/100) (line-too-long)
+assignment3.py:7:0: C0301: Line too long (153/100) (line-too-long)
+assignment3.py:16:0: C0303: Trailing whitespace (trailing-whitespace)
+assignment3.py:26:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+assignment3.py:27:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+assignment3.py:27:10: C0326: Exactly one space required after assignment
+    	flag +=1
+          ^^ (bad-whitespace)
+assignment3.py:29:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+assignment3.py:30:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+assignment3.py:30:12: C0326: Exactly one space required after assignment
+    		count +=1
+            ^^ (bad-whitespace)
+assignment3.py:32:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+assignment3.py:34:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+assignment3.py:36:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+assignment3.py:37:0: C0303: Trailing whitespace (trailing-whitespace)
+assignment3.py:41:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+assignment3.py:41:5: C0326: Exactly one space required around assignment
+	word=input()
+     ^ (bad-whitespace)
+assignment3.py:42:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+assignment3.py:42:2: C0326: Exactly one space required around assignment
+	n=int(input())
+  ^ (bad-whitespace)
+assignment3.py:43:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+assignment3.py:43:6: C0326: Exactly one space required around assignment
+	adict={}
+      ^ (bad-whitespace)
+assignment3.py:44:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+assignment3.py:45:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+assignment3.py:45:6: C0326: Exactly one space required around assignment
+		data=input()
+      ^ (bad-whitespace)
+assignment3.py:46:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+assignment3.py:46:3: C0326: Exactly one space required around assignment
+		l=data.split()
+   ^ (bad-whitespace)
+assignment3.py:47:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+assignment3.py:47:13: C0326: Exactly one space required around assignment
+		adict[l[0]]=int(l[1])
+             ^ (bad-whitespace)
+assignment3.py:48:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+assignment3.py:48:3: C0326: Exactly one space required around assignment
+	l2=input().split()
+   ^ (bad-whitespace)
+assignment3.py:49:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+assignment3.py:49:23: C0326: Exactly one space required after comma
+	print(isValidWord(word,adict,l2))
+                       ^ (bad-whitespace)
+assignment3.py:49:29: C0326: Exactly one space required after comma
+	print(isValidWord(word,adict,l2))
+                             ^ (bad-whitespace)
+assignment3.py:50:0: C0303: Trailing whitespace (trailing-whitespace)
+assignment3.py:53:11: C0326: Exactly one space required before comparison
+if __name__== "__main__":
+           ^^ (bad-whitespace)
+assignment3.py:54:0: C0304: Final newline missing (missing-final-newline)
+assignment3.py:54:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+assignment3.py:10:0: C0103: Function name "isValidWord" doesn't conform to snake_case naming style (invalid-name)
+assignment3.py:10:0: C0103: Argument name "wordList" doesn't conform to snake_case naming style (invalid-name)
+assignment3.py:26:5: C0103: Variable name "t" doesn't conform to snake_case naming style (invalid-name)
+assignment3.py:33:4: R1703: The if statement can be replaced with 'return bool(test)' (simplifiable-if-statement)
+assignment3.py:33:4: R1705: Unnecessary "else" after "return" (no-else-return)
+assignment3.py:40:0: C0111: Missing function docstring (missing-docstring)
+assignment3.py:42:1: C0103: Variable name "n" doesn't conform to snake_case naming style (invalid-name)
+assignment3.py:46:2: C0103: Variable name "l" doesn't conform to snake_case naming style (invalid-name)
+assignment3.py:48:1: C0103: Variable name "l2" doesn't conform to snake_case naming style (invalid-name)
+assignment3.py:44:5: W0612: Unused variable 'i' (unused-variable)
+
+---------------------------------------------------------------------
+Your code has been rated at -7.04/10 (previous run: -10.48/10, +3.44)
+
+
+[u'-7.04']
+
+[master 007522a] " -> 0 of 3 passed. pylint: -7.04/10 "
+ 3 files changed, 13 insertions(+), 8 deletions(-)
+
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
