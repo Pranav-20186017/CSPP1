@@ -31,8 +31,7 @@ def is_valid_word(word, hand, word_list):
         flag += 1
     if flag == 2:
         return True
-    else:
-        return False
+    return False
 def main():
     word = input()
     n = int(input())
