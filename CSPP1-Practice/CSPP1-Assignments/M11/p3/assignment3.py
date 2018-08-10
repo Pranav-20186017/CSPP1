@@ -27,7 +27,7 @@ def is_valid_word(word, hand, word_list):
             count += 1
         elif i not in list_t:
             return False
-    if count == len(t):
+    if count == len(temp_list):
         flag += 1
     if flag == 2:
         return True
