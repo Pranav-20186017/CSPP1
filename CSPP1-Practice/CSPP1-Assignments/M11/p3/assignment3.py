@@ -18,11 +18,11 @@ def is_valid_word(word, hand, word_list):
     list_t = list(hand.keys())
     flag = 0
     count = 0
-    t = []
+    temp_list = []
     if word in word_list:
-        t = list(word)
+        temp_list = list(word)
         flag += 1
-    for i in t:
+    for i in temp_list:
         if i in list_t:
             count += 1
         elif i not in list_t:
