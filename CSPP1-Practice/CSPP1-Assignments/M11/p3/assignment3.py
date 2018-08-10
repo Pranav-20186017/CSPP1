@@ -24,34 +24,28 @@ def isValidWord(word, hand, wordList):
     count = 0
     t = []
     if word in wordList:
-    	t = list(word)
-    	flag +=1
+        t = list(word)
+        flag +=1
     for i in t:
-    	if i in list_t:
-    		count +=1
-    	elif i not in list_t:
-    		return False
+        if i in list_t:
+            count +=1
+        elif i not in list_t:
+            return False
     if count == len(t):
-    	flag += 1
+        flag += 1
     if flag == 2:
-    	return True
+        return True
     else:
-    	return False
-    
-
-
+        return False
 def main():
-	word=input()
-	n=int(input())
-	adict={}
-	for i in range(n):
-		data=input()
-		l=data.split()
-		adict[l[0]]=int(l[1])
-	l2=input().split()
-	print(isValidWord(word,adict,l2))
-		
-
-
-if __name__== "__main__":
-	main()
+    word=input()
+    n=int(input())
+    adict={}
+    for i in range(n):
+        data=input()
+        l=data.split()
+        adict[l[0]]=int(l[1])
+    l2=input().split()
+    print(isValidWord(word,adict,l2))
+if __name__ == "__main__":
+    main()
