@@ -34,13 +34,13 @@ def is_valid_word(word, hand, word_list):
 def main():
     """Main Fuction"""
     word = input()
-    n = int(input())
+    nums = int(input())
     adict = {}
-    for i in range(n):
+    for i in range(nums):
         data = input()
-        l = data.split()
-        adict[l[0]] = int(l[1])
-    l2 = input().split()
-    print(is_valid_word(word, adict, l2))
+        lima = data.split()
+        adict[lima[0]] = int(lima[1])
+    lima2 = input().split()
+    print(is_valid_word(word, adict, lima2))
 if __name__ == "__main__":
     main()
