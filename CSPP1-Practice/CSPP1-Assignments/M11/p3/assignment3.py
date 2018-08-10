@@ -19,7 +19,7 @@ def isValidWord(word, hand, wordList):
     wordList: list of lowercase strings
     """
     # TO DO ... <-- Remove this comment when you code this function
-    list_temp = list(hand.values())
+    list_temp = list(hand.keys())
     print(list_temp)
     
 
