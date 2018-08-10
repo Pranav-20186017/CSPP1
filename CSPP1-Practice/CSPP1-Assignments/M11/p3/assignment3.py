@@ -5,7 +5,7 @@ Date: 10 August 2018
 Encoding: utf-8
 *************************************
 '''
-def is_valid_word(word, hand, wordList):
+def is_valid_word(word, hand, word_list):
     """
     Returns True if word is in the wordList and is entirely
     composed of letters in the hand. Otherwise, returns False
@@ -19,7 +19,7 @@ def is_valid_word(word, hand, wordList):
     flag = 0
     count = 0
     t = []
-    if word in wordList:
+    if word in word_list:
         t = list(word)
         flag += 1
     for i in t:
