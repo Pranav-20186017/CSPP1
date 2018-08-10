@@ -12,13 +12,13 @@ def calculate_hand_len(hand):
     return ans
 def main():
     """Main Function"""
-    n = input()
+    number = input()
     adict = {}
-    for i in range(int(n)):
+    for i in range(int(number)):
         data = input()
         i += 1#Line written for pylint compliance
-        l = data.split()
-        adict[l[0]] = int(l[1])
+        lima = data.split()
+        adict[lima[0]] = int(lima[1])
     print(calculate_hand_len(adict))
 if __name__ == "__main__":
     main()
