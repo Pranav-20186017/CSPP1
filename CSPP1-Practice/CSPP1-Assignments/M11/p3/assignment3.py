@@ -5,7 +5,7 @@ Date: 10 August 2018
 Encoding: utf-8
 *************************************
 '''
-def isValidWord(word, hand, wordList):
+def is_valid_word(word, hand, wordList):
     """
     Returns True if word is in the wordList and is entirely
     composed of letters in the hand. Otherwise, returns False
@@ -42,6 +42,6 @@ def main():
         l = data.split()
         adict[l[0]] = int(l[1])
     l2 = input().split()
-    print(isValidWord(word, adict, l2))
+    print(is_valid_word(word, adict, l2))
 if __name__ == "__main__":
     main()
