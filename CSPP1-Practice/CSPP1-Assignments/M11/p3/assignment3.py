@@ -20,7 +20,9 @@ def isValidWord(word, hand, wordList):
     """
     # TO DO ... <-- Remove this comment when you code this function
     if word in wordList:
-    	print(word)
+    	return True
+    else:
+    	return False
     
 
 
