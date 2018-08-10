@@ -22,6 +22,7 @@ def isValidWord(word, hand, wordList):
     list_t = list(hand.values()).sort()
     flag = 0
     count = 0
+    t = []
     if word in wordList:
     	t = list(word).sort()
     	flag +=1
