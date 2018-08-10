@@ -18,7 +18,7 @@ def main():
     for i in range(int(number)):
         data = input()
         lima = data.split()
-        adict[l[0]] = int(lima[1])
+        adict[lima[0]] = int(lima[1])
     data1 = input()
     print(update_hand(adict, data1))
 if __name__ == "__main__":
