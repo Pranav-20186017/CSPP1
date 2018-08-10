@@ -18,6 +18,7 @@ def main():
     for i in range(int(number)):
         data = input()
         lima = data.split()
+        i += 1
         adict[lima[0]] = int(lima[1])
     data1 = input()
     print(update_hand(adict, data1))
