@@ -16,6 +16,7 @@ def main():
     adict = {}
     for i in range(int(n)):
         data = input()
+        i += 1#Line written for pylint compliance
         l = data.split()
         adict[l[0]] = int(l[1])
     print(calculate_hand_len(adict))
