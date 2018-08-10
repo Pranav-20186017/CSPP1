@@ -10,7 +10,7 @@ def updateHand(hand, word):
     for i in word:
         if i in list(hand.keys()):
             hand[i] -= 1
-    return hand    
+    return hand 
 def main():
     """Main Function"""
     n = input()
