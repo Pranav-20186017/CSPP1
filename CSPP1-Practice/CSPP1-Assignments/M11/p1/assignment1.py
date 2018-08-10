@@ -6,7 +6,7 @@ Encoding: UTF-8
 ************************************
 '''
 
-def get_word_score(word, n):
+def get_word_score(word, number):
     """Compute the score for a given word"""
     word = word.lower()
     scrabble_letter_values = {
@@ -19,7 +19,7 @@ def get_word_score(word, n):
     for i in word:
         score += scrabble_letter_values[i]
     score *= len(word)
-    if len(word) == n:
+    if len(word) == number:
         score += bonus
     return score
 def main():
