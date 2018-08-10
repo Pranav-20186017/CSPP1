@@ -20,7 +20,7 @@ def isValidWord(word, hand, wordList):
     """
     # TO DO ... <-- Remove this comment when you code this function
     list_temp = list(hand.values())
-    print list_temp
+    print(list_temp)
     
 
 
