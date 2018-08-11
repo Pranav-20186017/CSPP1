@@ -43,7 +43,7 @@ def create_social_network(data):
     l=data.split("\n")
     for i in l:
         if isinstance(i,list) == True:
-        temp = l[i]
+            temp = l[i]
     print(temp)
 
 def main():
