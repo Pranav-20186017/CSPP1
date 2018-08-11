@@ -44,8 +44,9 @@ def create_social_network(data):
         return adict
     for i in data:
         l = data.split("\n")
-        temp_key.append(l[0])
-        temp_vals.append(l[1])
+        l2=l[0].split(" follows ")
+        temp_key.append(l2[0])
+        temp_vals.append(l2[1])
     print(temp_key)
     print(temp_vals)
 
