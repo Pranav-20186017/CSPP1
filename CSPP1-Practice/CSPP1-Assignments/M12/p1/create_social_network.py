@@ -36,6 +36,11 @@ def create_social_network(data):
     adict={}
     if 'follows' not in data:
         return adict
+    l = data.split("\n")
+    keys = l[0]
+    values = l[1]
+    print(keys)
+    print(values)
 def main():
     '''
         handling testcase input and printing output
