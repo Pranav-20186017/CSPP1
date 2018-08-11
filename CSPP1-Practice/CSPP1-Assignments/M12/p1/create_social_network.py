@@ -42,8 +42,9 @@ def create_social_network(data):
     l=data.split("\n")
     l.remove('')
     for i in l:
-        t = i.split("follows")
-        adict[t[0]] = t[1]
+        l2 = i.split("follows")
+        l2[1] = l2[1].split(',')
+        adict[l2[0]] = l2[1]
     return adict
 
 def main():
