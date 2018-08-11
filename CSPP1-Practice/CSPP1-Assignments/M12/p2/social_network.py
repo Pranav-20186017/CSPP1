@@ -49,11 +49,12 @@ def delete_person(network, arg1):
     # remove the pass below and start writing your code
     k = list(network.keys())
     for i in k:
-    	network[k].remove(arg1)
+    	temp = network[k]
+    	temp.remove(arg1)
+    	network[arg1] = temp 
     if arg1 in k:
     	del(network[k])
     return network
-
 
 def main():
     '''
