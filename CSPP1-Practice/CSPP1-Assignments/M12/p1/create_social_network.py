@@ -43,7 +43,11 @@ def create_social_network(data):
     if 'follows' not in data:
         return adict
     for i in data:
-        print(i)
+        l = data.split(" follows ")
+        temp_key.append(l[0])
+        temp_vals.append(l[1])
+    print(temp_key)
+    print(temp_vals)
 
 def main():
     '''
