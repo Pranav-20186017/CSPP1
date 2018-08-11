@@ -61,6 +61,8 @@ def delete_person(network, arg1):
         temp = (len(network[i]))
         if temp == 1:
             del network[i][0]
+        if temp == "Ollie":
+             del network[i][0]
     return network
 def main():
     '''
