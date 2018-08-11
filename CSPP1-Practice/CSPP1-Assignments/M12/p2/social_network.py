@@ -49,7 +49,7 @@ def delete_person(network, arg1):
     # remove the pass below and start writing your code
     k = list(network.keys())
     if arg1 in k:
-    	del(network[k])
+    	network.pop(arg1)
     return network
 
 def main():
