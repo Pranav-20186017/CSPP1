@@ -13,11 +13,10 @@ def follow(network, arg1, arg2):
         so, this should result in adding arg2 to the followers list of arg1
         update the network dictionary and return it
     '''
-    
     # remove the pass below and start writing your code
     k = list(network.keys())
     if arg1 not in k:
-        temp =[]
+        temp = []
         temp.append(arg2)
         network.update({arg1:temp})
     else:
