@@ -33,16 +33,16 @@ def create_social_network(data):
     '''
 
     # remove the pass below and start writing your code
-    l = []
+    list_1 = []
     adict = {}
     if 'follows' not in data:
         return adict
-    l = data.split("\n")
-    l.remove('')
-    for i in l:
-        l2 = i.split(" follows ")
-        l2[1] = l2[1].split(',')
-        adict[l2[0]] = l2[1]
+    list_1 = data.split("\n")
+    list_1.remove('')
+    for i in list_1:
+        list_2 = i.split(" follows ")
+        list_2[1] = list_2[1].split(',')
+        adict[list_2[0]] = list_2[1]
     return adict
 
 def main():
