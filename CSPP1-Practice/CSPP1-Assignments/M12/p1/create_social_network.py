@@ -33,14 +33,9 @@ def create_social_network(data):
     '''
 
     # remove the pass below and start writing your code
-    l = []
-    keys=[]
-    values=[]
-    l=data.split("follows")
-    keys.append(l[0])
-    values.append(l[1])
-    print(keys)
-    print(values)
+    adict={}
+    if 'follows' not in data:
+        return adict
 def main():
     '''
         handling testcase input and printing output
@@ -50,7 +45,7 @@ def main():
     for i in range(lines):
         i += 1
         string += input()
-        #string += '\n'
+        string += '\n'
 
     print(create_social_network(string))
 
