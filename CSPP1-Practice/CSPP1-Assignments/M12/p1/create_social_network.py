@@ -33,15 +33,14 @@ def create_social_network(data):
     '''
 
     # remove the pass below and start writing your code
-    l = []
-    l.append(data)
-    adict={}
-    for i in l:
-        l2 = i.split("follows")
-        l2[1] = l2[1].split(',')
-        adict[l2[0]] = l2[1]
-    print(adict)
-
+   l = []
+   keys=[]
+   values=[]
+   l=data.split("follows")
+   keys.append(l[0])
+   values.append(l[1])
+   print(keys)
+   print(values)
 def main():
     '''
         handling testcase input and printing output
