@@ -50,7 +50,7 @@ def delete_person(network, arg1):
     '''
     # remove the pass below and start writing your code
     k = list(network.keys())
-    del network['Robin'][0]
+    del network["Robin"][0]
     if arg1 in k:
         del network[arg1]
         return network
