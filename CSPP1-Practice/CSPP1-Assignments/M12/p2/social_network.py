@@ -48,8 +48,6 @@ def delete_person(network, arg1):
     '''
     # remove the pass below and start writing your code
     k = list(network.keys())
-    for i in k:
-    	del(network[k][arg1])
     if arg1 in k:
     	del(network[k])
     return network
