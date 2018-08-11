@@ -41,7 +41,6 @@ def create_social_network(data):
     l=data.split("\n")
     l.remove('')
     print(l)
-    return adict
 
 def main():
     '''
