@@ -38,6 +38,8 @@ def create_social_network(data):
     adict = {}
     if 'follows' not in data:
         return adict
+    for i in data:
+        print(data)
 
 
 def main():
