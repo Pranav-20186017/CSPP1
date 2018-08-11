@@ -19,7 +19,7 @@ def follow(network, arg1, arg2):
     if arg1 not in k:
         network.update({arg1:arg2})
     else:
-    	network[arg1].append(arg2)
+        network[arg1].append(arg2)
     return network
 
 def unfollow(network, arg1, arg2):
@@ -49,16 +49,16 @@ def delete_person(network, arg1):
     # remove the pass below and start writing your code
     k = list(network.keys())
     if arg1 in k:
-    	del network[arg1]
-    	return network
+        del network[arg1]
+        return network
     for i in k:
-    	for j in range(0, len(network[i])-1):
-    		if network[i][j] == arg1:
-    			del (network[i][j])
-   	for i in k:
-   	    temp = (len(l[i]))
-		if temp == 1:
-			del l[i][0]
+        for j in range(0, len(network[i])-1):
+            if network[i][j] == arg1:
+                del (network[i][j])
+    for i in k:
+        temp = (len(l[i]))
+        if temp == 1:
+            del l[i][0]
     return network
 def main():
     '''
