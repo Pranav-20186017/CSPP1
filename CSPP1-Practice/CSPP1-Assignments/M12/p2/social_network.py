@@ -52,11 +52,7 @@ def delete_person(network, arg1):
     	network.pop(arg1)
     	return network
     for i in k:
-    	for j in range(0, len(network[k])):
-    		if network[k][j] == arg1:
-    			network[k].remove(arg1)
-    return network
-
+    	print(network[k])
 def main():
     '''
         handling testcase input and printing output
