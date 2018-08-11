@@ -45,7 +45,6 @@ def create_social_network(data):
     l=data.split("\n")
     for i in range(0, len(l)):
         temp.append(l[i])
-    print(l)
     print(temp)
    
 
