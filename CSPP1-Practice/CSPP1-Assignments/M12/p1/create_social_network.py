@@ -39,6 +39,7 @@ def create_social_network(data):
     if 'follows' not in data:
         return adict
     l=data.split("\n")
+    l.remove('')
     print(l)
 
 def main():
