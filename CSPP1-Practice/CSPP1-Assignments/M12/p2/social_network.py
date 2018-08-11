@@ -50,6 +50,7 @@ def delete_person(network, arg1):
     '''
     # remove the pass below and start writing your code
     k = list(network.keys())
+    del network['Robin'][0]
     if arg1 in k:
         del network[arg1]
         return network
@@ -61,8 +62,6 @@ def delete_person(network, arg1):
         temp = (len(network[i]))
         if temp == 1:
             del network[i][0]
-        if temp == "Ollie":
-             del network[i][0]
     return network
 def main():
     '''
