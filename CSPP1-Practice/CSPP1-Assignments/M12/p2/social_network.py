@@ -17,7 +17,9 @@ def follow(network, arg1, arg2):
     # remove the pass below and start writing your code
     k = list(network.keys())
     if arg1 not in k:
-        network.update({arg1:arg2})
+        temp =[]
+        temp.append(arg2)
+        network.update({arg1:temp})
     else:
         network[arg1].append(arg2)
     return network
