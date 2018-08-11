@@ -15,7 +15,11 @@ def follow(network, arg1, arg2):
     '''
     
     # remove the pass below and start writing your code
-    network[arg1] += (arg2)
+    k = list(network.keys())
+    if arg1 not in keys:
+        network += {arg1:arg2}
+    else:
+    	network[arg1].append(arg2)
     return network
 
 def unfollow(network, arg1, arg2):
