@@ -42,7 +42,7 @@ def create_social_network(data):
         return adict
     l=data.split("\n")
     for i in l:
-        if isinstance(i) == list
+        if isinstance(i,list) == True:
         temp = l[i]
     print(temp)
 
