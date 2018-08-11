@@ -40,8 +40,7 @@ def create_social_network(data):
         return adict
     l=data.split("\n")
     l.remove('')
-    [i.split('follows', 1)[0] for i in l]
-    #print(l)
+    print(l)
 
 def main():
     '''
