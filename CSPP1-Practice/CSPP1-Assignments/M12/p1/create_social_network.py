@@ -33,14 +33,14 @@ def create_social_network(data):
     '''
 
     # remove the pass below and start writing your code
-   l = []
-   keys=[]
-   values=[]
-   l=data.split("follows")
-   keys.append(l[0])
-   values.append(l[1])
-   print(keys)
-   print(values)
+    l = []
+    keys=[]
+    values=[]
+    l=data.split("follows")
+    keys.append(l[0])
+    values.append(l[1])
+    print(keys)
+    print(values)
 def main():
     '''
         handling testcase input and printing output
