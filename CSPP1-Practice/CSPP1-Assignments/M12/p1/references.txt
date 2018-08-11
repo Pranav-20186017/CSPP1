@@ -1,0 +1,4 @@
+https://www.programiz.com/python-programming/methods/built-in/isinstance
+http://python-reference.readthedocs.io/en/latest/docs/functions/isinstance.html
+https://stackoverflow.com/questions/6696027/split-elements-of-a-list-in-python
+https://stackoverflow.com/questions/5844672/delete-an-element-from-a-dictionary
