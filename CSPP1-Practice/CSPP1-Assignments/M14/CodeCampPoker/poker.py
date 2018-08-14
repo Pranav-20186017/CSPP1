@@ -72,7 +72,6 @@ def hand_rank(hand):
     rank = 0
     rank = is_flush(hand) + is_straight(hand)
     return rank
-    
 def poker(hands):
     '''
         This function is completed for you. Read it to learn the code.
