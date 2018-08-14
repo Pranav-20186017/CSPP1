@@ -14,10 +14,22 @@ def is_straight(hand):
         Think of an algorithm: given the card face value how to check if it a straight
         Write the code for it and return True if it is a straight else return False
     '''
-
-
-    
-
+    length = len(hand)
+    f_sequence = 'A123456789TJQKA'
+    order = {
+        '2':0, '3':1, '4':2, '5':3, '6':4, '7':5, '8':6, '9':7, 'T':8, 'J':9,
+        'Q':10, 'K':11, 'A':12}
+    string = ""
+    for element in order:
+        for part in range(len(length)):
+            if hand[part][0] == element:
+                string += element
+    for loop in range(11):
+        if f_sequence[loop:loop + 5] == string:
+            return 1
+    if string[0] == '2' and string[4] == 'A':
+        return 1
+    return 0
 def is_flush(hand):
     '''
         How do we find out if the given hand is a flush?
@@ -27,9 +39,12 @@ def is_flush(hand):
         Think of an algorithm: given the card suite how to check if it is a flush
         Write the code for it and return True if it is a flush else return False
     '''
-    temp = str(hand)
-    print(temp)
-
+    character = hand[0][1]
+    length = len(hand)
+    for i in range(length):
+        if hand[i][1] != character:
+            return 0
+    return 2
 def hand_rank(hand):
     '''
         You will code this function. The goal of the function is to
@@ -54,9 +69,10 @@ def hand_rank(hand):
     # third would be a straight with the return value 1
     # any other hand would be the fourth best with the return value 0
     # max in poker function uses these return values to select the best hand
-    return 1
-    is_flush(hand)
-
+    rank = 0
+    rank = is_flush(hand) + is_straight(hand)
+    return ranks
+    
 def poker(hands):
     '''
         This function is completed for you. Read it to learn the code.
