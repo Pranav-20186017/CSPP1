@@ -21,7 +21,7 @@ def is_straight(hand):
         'Q':10, 'K':11, 'A':12}
     string = ""
     for element in order:
-        for part in range(len(length)):
+        for part in range(length):
             if hand[part][0] == element:
                 string += element
     for loop in range(11):
