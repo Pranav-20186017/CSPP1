@@ -71,7 +71,7 @@ def hand_rank(hand):
     # max in poker function uses these return values to select the best hand
     rank = 0
     rank = is_flush(hand) + is_straight(hand)
-    return ranks
+    return rank
     
 def poker(hands):
     '''
