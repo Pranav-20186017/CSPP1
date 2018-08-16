@@ -22,10 +22,10 @@ def is_flush(hand):
     return len(set(values_set)) == 1
 
 def kind(ranks, n):
-    ''' Returning the rank and checking of the repetition and sending the rank''' 
+    ''' Returning the rank and checking of the repetition and sending the rank'''
     for i in ranks:
         if ranks.count(i) == n:
-           return i
+            return i
 def is_two_pair(ranks):
     '''Checking if two pair or not '''
     high_val = kind(ranks, 2)
