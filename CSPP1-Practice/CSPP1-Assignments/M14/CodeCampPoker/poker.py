@@ -43,7 +43,7 @@ def is_two_pair(hand):
 		return True
 	return False
 def is_one_pair(hand):
-	print("insise op")
+	# print("insise op")
 	my_dic = make_dict(hand)
 	if 2 in list(my_dic.values()):
 		return True
