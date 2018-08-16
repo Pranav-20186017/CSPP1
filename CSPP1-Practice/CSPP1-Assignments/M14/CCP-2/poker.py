@@ -2,9 +2,9 @@
     Author: Pranav Surampudi
     date : 16-08-2018
 '''
-
-
-def is_straight(hand):
+def hand_values(hand):
+    return sorted(set(["--23456789TJQKA".index(c) for c,x in hand]),reverse=True)
+def is_straight(ranks):
     '''
         How do we find out if the given hand is a straight?
         The hand has a list of cards represented as strings.
@@ -20,8 +20,7 @@ def is_straight(hand):
     # hand_values = []
     # for i in hand:
     #     hand_values.append(str_values.index(i[0]))
-    hand_values = sorted(set(["--23456789TJQKA".index(c) for c,x in hand]))
-    return len(hand_values)==5 and max(hand_values) - min(hand_values) == 4 or (hand_values[0:4]==[2,3,4,5] and hand_values[-1]==14)
+    return len(set(ranks))==5 and max(ranks) - min(ranks) == 4 or (ranks[1:5]==[5,4,3,2] and ranks[0]==14)
 def is_flush(hand):
     '''
         How do we find out if the given hand is a flush?
@@ -37,7 +36,15 @@ def is_flush(hand):
     if len(value_set) == 1:
         return True
     return False
-
+def kind(ranks, n):
+    for i in ranks:
+        if ranks.count(i) == n:
+            return i
+def is_two_pair(ranks):
+    high_rep = kind(ranks,2)
+    low_rep = kind(sorted(ranks), 2)
+    if high_rep != low_rep:
+        return high_rep, low_rep, ranks
 
 def hand_rank(hand):
     '''
@@ -63,13 +70,24 @@ def hand_rank(hand):
     # third would be a straight with the return value 1
     # any other hand would be the fourth best with the return value 0
     # max in poker function uses these return values to select the best hand
+    rank = hand_values(hand)
     if is_flush(hand) and is_straight(hand):
-        return 3
+        return 8, rank
+    if kind(rank, 4):
+        return 7, kind(rank, 4), rank
+    if kind(rank,3) and kind(rank, 2):
+        return 6, kind(rank, 3), kind(rank,2), rank
     if is_flush(hand):
-        return 2
+        return 5, rank
     if is_straight(hand):
-        return 1
-    return 0
+        return 4, rank
+    if kind(rank, 3):
+        return 3, kind(rank, 3), rank
+    if is_two_pair(hand):
+        return 2, is_two_pair(hand)
+    if kind(rank, 1):
+        return 1, kind(rank), rank
+    return 0, rank
 def poker(hands):
     '''
         This function is completed for you. Read it to learn the code.
