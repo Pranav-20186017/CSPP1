@@ -83,8 +83,8 @@ def hand_rank(hand):
     if kind(rank, 3):
         return 3, kind(rank, 3), rank
     if is_two_pair(hand):
-        return 2, is_two_pair(hand)
-    if kind(rank, 1):
+        return 2, is_two_pair(rank)
+    if kind(rank, 2):
         return 1, kind(rank), rank
     return 0, rank
 def poker(hands):
