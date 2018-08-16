@@ -19,7 +19,7 @@ def is_straight(hand):
     # hand_values = []
     # for i in hand:
     #     hand_values.append(str_values.index(i[0]))
-    hand_values = set(["--23456789TJQKA".index(c) for c,x in hand])
+    hand_values = sorted(set(["--23456789TJQKA".index(c) for c,x in hand]))
     return len(hand_values)==5 and max(hand_values) - min(hand_values) == 4 
 def is_flush(hand):
     '''
