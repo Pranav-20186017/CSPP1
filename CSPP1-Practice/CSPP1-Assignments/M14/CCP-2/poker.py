@@ -19,15 +19,8 @@ def is_straight(hand):
     # hand_values = []
     # for i in hand:
     #     hand_values.append(str_values.index(i[0]))
-    hand_values = ["--23456789TJQKA".index(c) for c,x in hand]
-    hand_values.sort()
-    for i in range(len(hand_values)-1):
-        if hand_values[i] - hand_values[i+1] != -1:
-            return False
-    return True
-
-
-
+    hand_values = set(["--23456789TJQKA".index(c) for c,x in hand])
+    return max(hand_values) - min(hand_values) == 4 
 def is_flush(hand):
     '''
         How do we find out if the given hand is a flush?
