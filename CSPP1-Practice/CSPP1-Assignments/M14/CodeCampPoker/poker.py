@@ -3,7 +3,47 @@
     Read about poker hands here.
     https://en.wikipedia.org/wiki/List_of_poker_hands
 '''
-
+def make_dict(hand):
+	dic ={}
+	for i in hand:
+		if i[0] in dic:
+			dic[i[0]] += 1
+		else:
+			dic[i[0]] = 1
+	return dic
+def is_four_kind(hand):
+	my_dic = make_dict(hand)
+	if 4 in list(my_dic.values()):
+		return True
+	return False
+def is_three_kind(hand):
+	my_dic = make_dict(hand)
+	if 3 in list(my_dic.values()):
+		return True
+	return False
+def is_two_pair(hand):
+	count = 0
+	my_dic = make_dict(hand)
+	for i in my_dic.values():
+		if i == 2:
+			count +=1
+	if count == 2:
+		return True
+	return False
+def is_one_pair(hand):
+	my_dic = make_dict(hand)
+	if 2 in list(my_dic.values()):
+		return True
+	return False
+def is_high(hand):
+	count = 0
+	my_dic =  make_dict(hand)
+	for i in list(my_dic.keys()):
+		if i == 1:
+			count += 1
+	if count == 5:
+		return True
+	return False
 def is_straight(hand):
     '''
         How do we find out if the given hand is a straight?
@@ -26,10 +66,10 @@ def is_straight(hand):
                 string += element
     for loop in range(11):
         if f_sequence[loop:loop + 5] == string:
-            return 1
+            return True
     if string[0] == '2' and string[4] == 'A':
-        return 1
-    return 0
+        return True
+    return False
 def is_flush(hand):
     '''
         How do we find out if the given hand is a flush?
@@ -43,8 +83,8 @@ def is_flush(hand):
     length = len(hand)
     for i in range(length):
         if hand[i][1] != character:
-            return 0
-    return 2
+            return False
+    return True
 def hand_rank(hand):
     '''
         You will code this function. The goal of the function is to
@@ -69,9 +109,16 @@ def hand_rank(hand):
     # third would be a straight with the return value 1
     # any other hand would be the fourth best with the return value 0
     # max in poker function uses these return values to select the best hand
-    rank = 0
-    rank = is_flush(hand) + is_straight(hand)
-    return rank
+    if is_flush(hand) and is_straight(hand):
+    	return 4
+    if is_four_kind(hand):
+    	return 3
+    elif is_flush(hand):
+    	return 2
+    elif is_straight(hand):
+    	return 1
+    else:
+    	return 0
 def poker(hands):
     '''
         This function is completed for you. Read it to learn the code.
