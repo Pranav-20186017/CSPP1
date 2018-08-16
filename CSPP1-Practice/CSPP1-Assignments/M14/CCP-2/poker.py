@@ -10,8 +10,8 @@ def hand_values(hand):
     return sorted((["--23456789TJQKA".index(c) for c, x in hand]), reverse = True)
 
 def is_straight(ranks):
-    ''' Check if straight or not ''' 
-    return (max(ranks) - min(ranks) == 4 and len(set(ranks)) == 5) or (ranks[1:5] == [5, 4, 3, 2] and ranks[0] == 14) 
+    ''' Check if straight or not '''
+    return (max(ranks) - min(ranks) == 4 and len(set(ranks)) == 5) or (ranks[1:5] == [5, 4, 3, 2] and ranks[0] == 14)
 
 def is_flush(hand):
     ''' Check if it is flush '''
