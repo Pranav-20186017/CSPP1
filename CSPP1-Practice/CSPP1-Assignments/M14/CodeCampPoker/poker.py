@@ -128,8 +128,8 @@ def hand_rank(hand):
     	return 8
     if is_four_kind(hand):
     	return 7
-    if is_full(hand):
-    	return 6
+    #if is_full(hand):
+    #	return 6
     if is_flush(hand):
     	return 5
     if is_straight(hand):
