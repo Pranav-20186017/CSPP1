@@ -22,7 +22,7 @@ def is_two_pair(ranks):
         return high_rep, low_rep, ranks
 def hand_rank(hand):
     rank = hand_values(hand)
-    if is_straight(rank) and is_flush(hand)
+    if is_straight(rank) and is_flush(hand):
         return 8, rank
     if kind(rank, 4):
         return 7, kind(rank, 4), rank
