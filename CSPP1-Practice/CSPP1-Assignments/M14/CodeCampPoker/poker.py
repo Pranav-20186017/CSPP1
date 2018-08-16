@@ -11,9 +11,19 @@ def make_dict(hand):
 		else:
 			dic[i[0]] = 1
 	return dic
+def is_five_kind(hand):
+	my_dic = make_dict(hand)
+	if 4 in list(my_dic.values()) and 'J' in my_dic:
+		return True
+	return False 
 def is_four_kind(hand):
 	my_dic = make_dict(hand)
 	if 4 in list(my_dic.values()):
+		return True
+	return False
+def is_full(hand):
+	my_dic = make_dict(hand)
+	if 2 in my_dic.values() and 3 in my_dic.values():
 		return True
 	return False
 def is_three_kind(hand):
@@ -109,13 +119,23 @@ def hand_rank(hand):
     # third would be a straight with the return value 1
     # any other hand would be the fourth best with the return value 0
     # max in poker function uses these return values to select the best hand
+    if is_five_kind(hand):
+    	return 9
     if is_flush(hand) and is_straight(hand):
-    	return 4
+    	return 8
     if is_four_kind(hand):
+    	return 7
+    if is_full(hand):
+    	return 6
+    if is_flush(hand):
+    	return 5
+    if is_straight(hand):
+    	return 4
+    if is_three_kind(hand):
     	return 3
-    elif is_flush(hand):
+    if is_two_pair(hand):
     	return 2
-    elif is_straight(hand):
+    if is_one_pair(hand):
     	return 1
     else:
     	return 0
