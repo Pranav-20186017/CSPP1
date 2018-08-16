@@ -62,7 +62,6 @@ if __name__ == "__main__":
     # read the number of test cases
     COUNT = int(input())
     # iterate through the test cases to set up hands list
-    list_1 = []
     HANDS = []
     for x in range(COUNT):
         line = input()
