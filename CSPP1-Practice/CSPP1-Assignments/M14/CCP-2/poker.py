@@ -1,11 +1,17 @@
+'''
+************************************************
+Author: Pranav Surampudi
+Date: 16 Aug 2018
+Encoding:utf-8
+***************************************************
+'''
 def hand_values(hand):
     ''' Returns the hand values based on the index '''
-    return sorted((["--23456789TJQKA".index(f) for f,s in hand]), reverse = True)
+    return sorted((["--23456789TJQKA".index(c) for c, x in hand]), reverse = True)
 
 def is_straight(ranks):
     ''' Check if straight or not ''' 
-    #print(ranks)
-    return (max(ranks) - min(ranks) == 4 and len(set(ranks)) == 5) or (ranks[1:5] == [5,4,3,2] and ranks[0] == 14 ) 
+    return (max(ranks) - min(ranks) == 4 and len(set(ranks)) == 5) or (ranks[1:5] == [5, 4, 3, 2] and ranks[0] == 14 ) 
 
 def is_flush(hand):
     ''' Check if it is flush '''
@@ -14,7 +20,7 @@ def is_flush(hand):
         values_set.append(i[1])
     return len(set(values_set)) == 1
 
-def kind(ranks,n):
+def kind(ranks, n):
     ''' Returning the rank and checking of the repetition and sending the rank''' 
     for i in ranks:
         if ranks.count(i) == n:
@@ -31,7 +37,7 @@ def hand_rank(hand):
     rank = hand_values(hand)
     if is_straight(rank) and is_flush(hand):#Straightflush
         return 8, rank
-    if kind(rank,4):#Four of a kind
+    if kind(rank, 4):#Four of a kind
         return 7, kind(rank, 4), rank
     if kind(rank, 3) and kind(rank, 2):#Full house
         return 6, kind(rank, 3), kind(rank, 2), rank
@@ -47,13 +53,11 @@ def hand_rank(hand):
         return 1, kind(rank, 2), rank
   
     return 0, rank
-
 def poker(hands):
     '''
-    This function is to return the max code
+    main poker function
     '''
     return max(hands, key=hand_rank)
-
 if __name__ == "__main__":
     # read the number of test cases
     COUNT = int(input())
