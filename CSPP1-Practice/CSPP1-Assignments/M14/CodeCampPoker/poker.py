@@ -21,13 +21,13 @@ def is_four_kind(hand):
 	if 4 in list(my_dic.values()):
 		return True
 	return False
-# def is_full(hand):
-# 	print("inside full house")
-# 	my_dic = make_dict(hand)
-# 	k = list(my_dic.keys())
-# 	if (2 in k) and (3 in k):
-# 		return True
-# 	return False
+def is_full(hand):
+	my_dic = make_dict(hand)
+	k = list(my_dic.keys())
+	if (2 in k) and (3 in k):
+		return True
+	else:
+		return False
 def is_three_kind(hand):
 	my_dic = make_dict(hand)
 	if 3 in list(my_dic.values()):
@@ -128,8 +128,8 @@ def hand_rank(hand):
     	return 8
     if is_four_kind(hand):
     	return 7
-    #if is_full(hand):
-    #	return 6
+    if is_full(hand):
+    	return 6
     if is_flush(hand):
     	return 5
     if is_straight(hand):
