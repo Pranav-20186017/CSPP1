@@ -3,60 +3,45 @@
     Read about poker hands here.
     https://en.wikipedia.org/wiki/List_of_poker_hands
 '''
-def make_dict(hand):
-	dic ={}
-	for i in hand:
-		if i[0] in dic:
-			dic[i[0]] += 1
-		else:
-			dic[i[0]] = 1
-	return dic
-def is_five_kind(hand):
-	my_dic = make_dict(hand)
-	if 4 in list(my_dic.values()) and 'J' in my_dic:
-		return True
-	return False 
-def is_four_kind(hand):
-	my_dic = make_dict(hand)
-	if 4 in list(my_dic.values()):
-		return True
-	return False
-def is_full(hand):
-	my_dic = make_dict(hand)
-	if 2 in my_dic.values():
-		if 3 in my_dic.values():
-			return True
-	else:
-		return False
-def is_three_kind(hand):
-	my_dic = make_dict(hand)
-	if 3 in list(my_dic.values()):
-		return True
-	return False
-def is_two_pair(hand):
-	count = 0
-	my_dic = make_dict(hand)
-	for i in my_dic.values():
-		if i == 2:
-			count +=1
-	if count == 2:
-		return True
-	return False
+def is_four_of_a_kind(hand):
+    '''function'''
+    my_dict = make_dict(hand)
+    if 4 in list(my_dict.values()):
+        return True
+    return False
+
+def is_three_of_a_kind(hand):
+    '''function'''
+    my_dict = make_dict(hand)
+    if 3 in list(my_dict.values()):
+        return True
+    return False
+
 def is_one_pair(hand):
-	# print("insise op")
-	my_dic = make_dict(hand)
-	if 2 in list(my_dic.values()):
-		return True
-	return False
-def is_high(hand):
-	count = 0
-	my_dic =  make_dict(hand)
-	for i in list(my_dic.keys()):
-		if i == 1:
-			count += 1
-	if count == 5:
-		return True
-	return False
+    '''function'''
+    my_dict = make_dict(hand)
+    if 2 in list(my_dict.values()):
+        return True
+    return False
+
+def is_full_house(hand):
+    '''function'''
+    my_dict = make_dict(hand)
+    if 3 in list(my_dict.values()):
+        if 2 in list(my_dict.values()):
+            return True
+    return False
+
+def is_two_pair(hand):
+    '''function'''
+    my_dict = make_dict(hand)
+    count = 0
+    if list(my_dict.values()) == 2:
+        count += 1
+    if count == 2:
+        return True
+    return False
+
 def is_straight(hand):
     '''
         How do we find out if the given hand is a straight?
@@ -67,23 +52,23 @@ def is_straight(hand):
         Think of an algorithm: given the card face value how to check if it a straight
         Write the code for it and return True if it is a straight else return False
     '''
-    length = len(hand)
-    # print("straight")
-    f_sequence = 'A123456789TJQKA'
-    order = {
-        '2':0, '3':1, '4':2, '5':3, '6':4, '7':5, '8':6, '9':7, 'T':8, 'J':9,
-        'Q':10, 'K':11, 'A':12}
-    string = ""
-    for element in order:
-        for part in range(length):
-            if hand[part][0] == element:
-                string += element
-    for loop in range(11):
-        if f_sequence[loop:loop + 5] == string:
-            return True
-    if string[0] == '2' and string[4] == 'A':
-        return True
-    return False
+    # sorted_hand = str(hand.sort())
+    # sorted_hand = dict(sorted_hand())
+    face_value = []
+    sequenced_face_value = []
+    sequence = '23456789TJQKA'
+    for i in hand:
+        face_value.append(i[0])
+    adict = {'2':2, '3':3, '4':4, '5':5, '6':6, '7':7, '8':8, '9':9,
+             'T':10, 'J':11, 'Q':12, 'K':13, 'A':14}
+    for i in adict:
+        for j in face_value:
+            if i == j:
+                sequenced_face_value.append(i)
+    for k in range(len(sequence)-4):
+        if ''.join(sequenced_face_value) == sequence[k:k+5]:
+            return 1
+    return 0
 def is_flush(hand):
     '''
         How do we find out if the given hand is a flush?
@@ -93,11 +78,9 @@ def is_flush(hand):
         Think of an algorithm: given the card suite how to check if it is a flush
         Write the code for it and return True if it is a flush else return False
     '''
-    character = hand[0][1]
-    length = len(hand)
-    # print("flush")
-    for i in range(length):
-        if hand[i][1] != character:
+    suit_value = hand[0][1]
+    for i in hand:
+        if suit_value != i[1]:
             return False
     return True
 def hand_rank(hand):
@@ -111,7 +94,7 @@ def hand_rank(hand):
 
     # By now you should have seen the way a card is represented.
     # If you haven't then go the main or poker function and print the hands
-    # Each card is coded as a 2 character string. Example Kind of Hearts is KH
+    # Each card is coded as a 2 character string. Example King of Hearts is KH
     # First character for face value 2,3,4,5,6,7,8,9,T,J,Q,K,A
     # Second character for the suit S (Spade), H (Heart), D (Diamond), C (Clubs)
     # What would be the logic to determine if a hand is a straight or flush?
@@ -124,24 +107,23 @@ def hand_rank(hand):
     # third would be a straight with the return value 1
     # any other hand would be the fourth best with the return value 0
     # max in poker function uses these return values to select the best hand
-    if is_flush(hand) and is_straight(hand):
-    	return 8
-    if is_four_kind(hand):
-    	return 7
-    if is_full(hand):
-    	return 6
+    if is_straight(hand) and is_flush(hand):
+        return 8
+    if is_four_of_a_kind(hand):
+        return 7
+    if is_full_house(hand):
+        return 6
     if is_flush(hand):
-    	return 5
+        return 5
     if is_straight(hand):
-    	return 4
-    if is_three_kind(hand):
-    	return 3
+        return 4
+    if is_three_of_a_kind(hand):
+        return 3
     if is_two_pair(hand):
-    	return 2
+        return 2
     if is_one_pair(hand):
-    	return 1
-    else:
-    	return 0
+        return 1
+    return 0
 def poker(hands):
     '''
         This function is completed for you. Read it to learn the code.
