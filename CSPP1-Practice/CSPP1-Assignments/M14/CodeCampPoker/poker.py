@@ -3,6 +3,13 @@
     Read about poker hands here.
     https://en.wikipedia.org/wiki/List_of_poker_hands
 '''
+def make_dict(hand):
+	dic ={}
+	for i in hand:
+		if i[0] in dic:
+			dic[i[0]] += 1
+		else:
+			dic[i[0]] = 1
 def is_four_of_a_kind(hand):
     '''function'''
     my_dict = make_dict(hand)
