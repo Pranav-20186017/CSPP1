@@ -32,10 +32,12 @@ def kind(ranks, number):
 def is_two_pair(ranks):
     '''Checking if two pair or not '''
     high_val = kind(ranks, 2)
+    flag = 0
     low_val = kind(sorted(ranks), 2)
     if high_val != low_val:
-        break
-    return high_val, low_val, ranks
+        flag +=1
+    if flag == 1:
+        return high_val, low_val, ranks
 def hand_rank(hand):
     ''' Function to call all the functions '''
     rank = hand_values(hand)
