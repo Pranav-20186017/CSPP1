@@ -30,11 +30,11 @@ def is_flush(hand):
         Think of an algorithm: given the card suite how to check if it is a flush
         Write the code for it and return True if it is a flush else return False
     '''
-    suit_value = hand[0][1]
-    for i in hand:
-        if suit_value != i[1]:
-            return False
-    return True
+    value_set = set()
+    for i in value_set:
+
+
+   
 def kind(ranks, n):
     for i in ranks:
         if ranks.count(i) == n:
