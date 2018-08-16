@@ -4,7 +4,7 @@
 '''
 def make_dict(hand):
     '''function to make dictionary'''
-    dic ={}
+    dic = {}
     for i in hand:
        if i[0] in dic:
             dic[i[0]] += 1
