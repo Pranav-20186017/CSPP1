@@ -5,11 +5,11 @@
 def make_dict(hand):
     '''function to make dictionary'''
     dic ={}
-   	for i in hand:
+    for i in hand:
        if i[0] in dic:
-       		dic[i[0]] += 1
+            dic[i[0]] += 1
        else:
-       		dic[i[0]] = 1
+            dic[i[0]] = 1
     return dic
 def is_four_of_a_kind(hand):
     '''function'''
