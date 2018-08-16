@@ -21,11 +21,13 @@ def is_four_kind(hand):
 	if 4 in list(my_dic.values()):
 		return True
 	return False
-def is_full(hand):
-	my_dic = make_dict(hand)
-	if 2 in my_dic.values() and 3 in my_dic.values():
-		return True
-	return False
+# def is_full(hand):
+# 	print("inside full house")
+# 	my_dic = make_dict(hand)
+# 	k = list(my_dic.keys())
+# 	if (2 in k) and (3 in k):
+# 		return True
+# 	return False
 def is_three_kind(hand):
 	my_dic = make_dict(hand)
 	if 3 in list(my_dic.values()):
@@ -41,6 +43,7 @@ def is_two_pair(hand):
 		return True
 	return False
 def is_one_pair(hand):
+	print("insise op")
 	my_dic = make_dict(hand)
 	if 2 in list(my_dic.values()):
 		return True
@@ -65,6 +68,7 @@ def is_straight(hand):
         Write the code for it and return True if it is a straight else return False
     '''
     length = len(hand)
+    # print("straight")
     f_sequence = 'A123456789TJQKA'
     order = {
         '2':0, '3':1, '4':2, '5':3, '6':4, '7':5, '8':6, '9':7, 'T':8, 'J':9,
@@ -91,6 +95,7 @@ def is_flush(hand):
     '''
     character = hand[0][1]
     length = len(hand)
+    # print("flush")
     for i in range(length):
         if hand[i][1] != character:
             return False
