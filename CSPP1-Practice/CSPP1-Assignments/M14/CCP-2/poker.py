@@ -31,10 +31,7 @@ def is_flush(hand):
         Write the code for it and return True if it is a flush else return False
     '''
     value_set = set()
-    for i in value_set:
-
-
-   
+    # for i in value_set:
 def kind(ranks, n):
     for i in ranks:
         if ranks.count(i) == n:
