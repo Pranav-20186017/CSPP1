@@ -23,8 +23,7 @@ def is_four_kind(hand):
 	return False
 def is_full(hand):
 	my_dic = make_dict(hand)
-	k = list(my_dic.keys())
-	if (2 in k) and (3 in k):
+	if 2 in my_dic.values() and 3 in my_dic.values():
 		return True
 	else:
 		return False
