@@ -1,15 +1,16 @@
 '''
-    Write a program to evaluate poker hands and determine the winner
-    Read about poker hands here.
-    https://en.wikipedia.org/wiki/List_of_poker_hands
+    Author: Pranav Surampudi
+    date : 16-08-2018
 '''
 def make_dict(hand):
-	dic ={}
-	for i in hand:
-		if i[0] in dic:
-			dic[i[0]] += 1
-		else:
-			dic[i[0]] = 1
+    '''function to make dictionary'''
+    dic ={}
+   for i in hand:
+       if i[0] in dic:
+       		dic[i[0]] += 1
+       else:
+       		dic[i[0]] = 1
+    return dic
 def is_four_of_a_kind(hand):
     '''function'''
     my_dict = make_dict(hand)
@@ -76,6 +77,8 @@ def is_straight(hand):
         if ''.join(sequenced_face_value) == sequence[k:k+5]:
             return 1
     return 0
+
+
 def is_flush(hand):
     '''
         How do we find out if the given hand is a flush?
@@ -90,6 +93,7 @@ def is_flush(hand):
         if suit_value != i[1]:
             return False
     return True
+
 def hand_rank(hand):
     '''
         You will code this function. The goal of the function is to
@@ -131,6 +135,8 @@ def hand_rank(hand):
     if is_one_pair(hand):
         return 1
     return 0
+
+
 def poker(hands):
     '''
         This function is completed for you. Read it to learn the code.
