@@ -35,7 +35,7 @@ def is_two_pair(ranks):
     flag = 0
     low_val = kind(sorted(ranks), 2)
     if high_val != low_val:
-        flag +=1
+        flag += 1
     if flag == 1:
         return high_val, low_val, ranks
 def hand_rank(hand):
