@@ -2,8 +2,7 @@
     Author: Pranav Surampudi
     date : 16-08-2018
 '''
-def hand_values(hand):
-    return sorted(["--23456789TJQKA".index(c) for c,x in hand])
+
 
 def is_straight(hand):
     '''
@@ -21,7 +20,7 @@ def is_straight(hand):
     # hand_values = []
     # for i in hand:
     #     hand_values.append(str_values.index(i[0]))
-    hand_values = set(hand_values(hand))
+    hand_values = sorted(set(["--23456789TJQKA".index(c) for c,x in hand]))
     return len(hand_values)==5 and max(hand_values) - min(hand_values) == 4 or (hand_values[0:4]==[2,3,4,5] and hand_values[-1]==14)
 def is_flush(hand):
     '''
