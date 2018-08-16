@@ -2,53 +2,6 @@
     Author: Pranav Surampudi
     date : 16-08-2018
 '''
-def make_dict(hand):
-    '''function to make dictionary'''
-    dic = {}
-    for i in hand:
-       if i[0] in dic:
-            dic[i[0]] += 1
-       else:
-            dic[i[0]] = 1
-    return dic
-def is_four_of_a_kind(hand):
-    '''function'''
-    my_dict = make_dict(hand)
-    if 4 in list(my_dict.values()):
-        return True
-    return False
-
-def is_three_of_a_kind(hand):
-    '''function'''
-    my_dict = make_dict(hand)
-    if 3 in list(my_dict.values()):
-        return True
-    return False
-
-def is_one_pair(hand):
-    '''function'''
-    my_dict = make_dict(hand)
-    if 2 in list(my_dict.values()):
-        return True
-    return False
-
-def is_full_house(hand):
-    '''function'''
-    my_dict = make_dict(hand)
-    if 3 in list(my_dict.values()):
-        if 2 in list(my_dict.values()):
-            return True
-    return False
-
-def is_two_pair(hand):
-    '''function'''
-    my_dict = make_dict(hand)
-    count = 0
-    if list(my_dict.values()) == 2:
-        count += 1
-    if count == 2:
-        return True
-    return False
 
 def is_straight(hand):
     '''
@@ -62,23 +15,7 @@ def is_straight(hand):
     '''
     # sorted_hand = str(hand.sort())
     # sorted_hand = dict(sorted_hand())
-    face_value = []
-    sequenced_face_value = []
-    sequence = '23456789TJQKA'
-    for i in hand:
-        face_value.append(i[0])
-    adict = {'2':2, '3':3, '4':4, '5':5, '6':6, '7':7, '8':8, '9':9,
-             'T':10, 'J':11, 'Q':12, 'K':13, 'A':14}
-    for i in adict:
-        for j in face_value:
-            if i == j:
-                sequenced_face_value.append(i)
-    for k in range(len(sequence)-4):
-        if ''.join(sequenced_face_value) == sequence[k:k+5]:
-            return 1
-    return 0
-
-
+    
 def is_flush(hand):
     '''
         How do we find out if the given hand is a flush?
@@ -88,11 +25,6 @@ def is_flush(hand):
         Think of an algorithm: given the card suite how to check if it is a flush
         Write the code for it and return True if it is a flush else return False
     '''
-    suit_value = hand[0][1]
-    for i in hand:
-        if suit_value != i[1]:
-            return False
-    return True
 
 def hand_rank(hand):
     '''
@@ -118,25 +50,13 @@ def hand_rank(hand):
     # third would be a straight with the return value 1
     # any other hand would be the fourth best with the return value 0
     # max in poker function uses these return values to select the best hand
-    if is_straight(hand) and is_flush(hand):
-        return 8
-    if is_four_of_a_kind(hand):
-        return 7
-    if is_full_house(hand):
-        return 6
-    if is_flush(hand):
-        return 5
-    if is_straight(hand):
-        return 4
-    if is_three_of_a_kind(hand):
+    if is_flush(hand) and is_straight(hand):
         return 3
-    if is_two_pair(hand):
+    if is_flush(hand):
         return 2
-    if is_one_pair(hand):
+    if is_straight(hand):
         return 1
     return 0
-
-
 def poker(hands):
     '''
         This function is completed for you. Read it to learn the code.
