@@ -2,6 +2,7 @@
     Document Distance - A detailed description is given in the PDF
 '''
 def generate_dic(input1, input2):
+    '''generate a dictionary of words'''
     new_input_1 = str(input1.lower())
     new_input_2 = str(input2.lower())
     spec_char = "!@#$%^&*(),-_+=;:'.?"
