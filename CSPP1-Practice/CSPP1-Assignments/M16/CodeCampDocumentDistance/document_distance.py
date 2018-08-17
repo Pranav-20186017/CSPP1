@@ -49,12 +49,13 @@ def similarity(d1, d2):
     return calculate_distance(common_dict)
     
 
-def load_stopwords(filename):
+def load_stopwords():
     '''
         loads stop words from a file and returns a dictionary
     '''
+    filename = "stopwords.txt"
     stopwords = {}
-    with open(filename, 'r') as filename:
+    with open("filename", 'r') as filename:
         for line in filename:
             stopwords[line.strip()] = 0
     return stopwords
