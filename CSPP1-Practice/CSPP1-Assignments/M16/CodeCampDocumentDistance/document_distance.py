@@ -16,10 +16,10 @@ def remove_stopwords(l1, l2):
     #print(stopwords)
     removal= list(stopwords.keys())
     #print(removal)
-    for i in range(0, len(l1)+1):
+    for i in range(0, len(l1)):
     	if l1[i] in removal:
     		del l1[i]
-    for i in range(0, len(l2)+1):
+    for i in range(0, len(l2)):
     	if l2[i] in removal:
     		del l2[i]
     print(l1)
