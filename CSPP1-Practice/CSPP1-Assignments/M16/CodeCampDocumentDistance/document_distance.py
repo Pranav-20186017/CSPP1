@@ -17,11 +17,10 @@ def generate_dic(input1, input2):
     print(ver_2_inp1)
     print(ver_2_inp2)
 # def similarity(dict1, dict2):
-    '''
-        Compute the document distance as given in the PDF
-    '''
-    # pass
-
+#     '''
+#         Compute the document distance as given in the PDF
+#     '''
+#      pass
 def load_stopwords(filename):
     '''
         loads stop words from a file and returns a dictionary
@@ -31,7 +30,6 @@ def load_stopwords(filename):
         for line in filename:
             stopwords[line.strip()] = 0
     return stopwords
-
 def main():
     '''
         take two inputs and call the similarity function
