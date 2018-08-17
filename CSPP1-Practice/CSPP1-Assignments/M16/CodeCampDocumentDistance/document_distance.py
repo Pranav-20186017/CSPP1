@@ -18,7 +18,7 @@ def generate_dic(input1, input2):
     # print(ver_2_inp1)
     # print(ver_2_inp2)
     temp1 = ver_2_inp1.split()
-    print(temp)
+    print(temp1)
     temp2 = ver_2_inp2.split()
     print(temp2)
 
