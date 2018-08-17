@@ -8,7 +8,6 @@ def generate_dic(input1, input2):
     spec_char = "!@#$%^&*(),-_+=;:'.?"
     ver_2_inp1 = ""
     ver_2_inp2 = ""
-    array_1=[]
     for i in new_input_1:
         if i not in spec_char:
             ver_2_inp1 += i
@@ -19,7 +18,8 @@ def generate_dic(input1, input2):
     # print(ver_2_inp2)
     temp1 = ver_2_inp1.split()
     temp2 = ver_2_inp2.split()
-    return temp1, temp2
+    print(temp1)
+    print(temp2)
 
 # def similarity(dict1, dict2):
 #     '''
