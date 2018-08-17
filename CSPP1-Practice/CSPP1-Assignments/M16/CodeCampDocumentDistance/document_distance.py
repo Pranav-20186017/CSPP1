@@ -39,8 +39,8 @@ def similarity(d1, d2):
     common_dict = dict()
     string1_words = tokenize(d1)
     string2_words = tokenize(d2)
-    common_dict = build_dict(common_dict, string1_words,0)
-    common_dict = build_dict(common_dict, string2_words,1)
+    common_dict = build_dict(common_dict, string1_words, 0)
+    common_dict = build_dict(common_dict, string2_words, 1)
     return calculate_distance(common_dict)
     
 
