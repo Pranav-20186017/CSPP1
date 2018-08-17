@@ -1,7 +1,7 @@
 '''
     Document Distance - A detailed description is given in the PDF
 '''
-def generate_dic(input1, input2):
+def generate_dic(input1):
     '''generate a dictionary of words'''
     new_input_1 = str(input1.lower())
     spec_char = "!@#$%^&*(),-_+=;:'.?"
