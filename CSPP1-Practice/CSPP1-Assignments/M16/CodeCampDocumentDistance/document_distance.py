@@ -4,15 +4,17 @@
 def generate_dic(input1, input2):
 	new_input_1 = str(input1.lower())
 	new_input_2 = str(input2.lower())
-	spec_char  = "!?.,'"
+	spec_char  = "!@#$%^&*()-_+=;:'.?"
+	ver_2_inp1 = ""
+	ver_2_inp2 = ""
 	for i in new_input_1:
-		if i in spec_char:
-			new_input_1.replace(i,"")
+		if i not in spec_char:
+			ver_2_inp1 += i
 	for i in new_input_2:
-		if i in spec_char:
-			new_input_2.replace(i,"")
-	print(new_input_1)
-	print(new_input_2)
+		if i not in spec_char:
+			ver_2_inp2 += i
+	print(ver_2_inp1)
+	print(ver_2_inp2)
 def similarity(dict1, dict2):
     '''
         Compute the document distance as given in the PDF
