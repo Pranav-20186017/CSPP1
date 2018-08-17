@@ -13,7 +13,7 @@ def generate_list(input1):
     return temp1
 def remove_stopwords(l1, l2):
     stopwords = load_stopwords("stopwords.txt")
-    print(stopwords)
+    #print(stopwords)
     removal= list(stopwords.keys())
     for i in l1:
         if i in removal:
