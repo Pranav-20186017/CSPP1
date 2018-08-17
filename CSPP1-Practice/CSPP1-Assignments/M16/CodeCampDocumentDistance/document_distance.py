@@ -31,13 +31,13 @@ def calculate_distance(dictionary):
         den1 += val_1 ** 2
         den2 += val_2 ** 2
     return num/(math.sqrt(den1)*math.sqrt(den2))
-def similarity(d1, d2):
+def similarity(input_val_1, input_val_2):
     '''
         Compute the document distance as given in the PDF
     '''
     common_dict = dict()
-    string1_words = tokenize(d1)
-    string2_words = tokenize(d2)
+    string1_words = tokenize(input_val_1)
+    string2_words = tokenize(input_val_2)
     common_dict = build_dict(common_dict, string1_words, 0)
     common_dict = build_dict(common_dict, string2_words, 1)
     return calculate_distance(common_dict)
