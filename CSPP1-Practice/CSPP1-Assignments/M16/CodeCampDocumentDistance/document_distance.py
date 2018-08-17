@@ -1,7 +1,7 @@
 '''
     Document Distance - A detailed description is given in the PDF
 '''
-def generate_dict(input1, input2):
+def generate_dic(input1, input2):
 	return input1.lower(), input2.lower()
 def similarity(dict1, dict2):
     '''
