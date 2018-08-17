@@ -17,9 +17,8 @@ def generate_dic(input1, input2):
             ver_2_inp2 += i
     # print(ver_2_inp1)
     # print(ver_2_inp2)
-    for i in ver_2_inp1:
-        temp = ver_2_inp1.split()
-        print(temp)
+    temp = ver_2_inp1.split()
+    print(temp)
 
 # def similarity(dict1, dict2):
 #     '''
