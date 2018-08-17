@@ -2,8 +2,10 @@
     Document Distance - A detailed description is given in the PDF
 '''
 def generate_dic(input1, input2):
-	print(input1.lower())
-	print(input2.lower())
+	new_input_1 = str(input1.lower())
+	new_input_2 = str(input2.lower())
+	print(new_input_1)
+	print(new_input_2)
 def similarity(dict1, dict2):
     '''
         Compute the document distance as given in the PDF
