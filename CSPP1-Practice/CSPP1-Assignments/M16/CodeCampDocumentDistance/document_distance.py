@@ -29,9 +29,6 @@ def calculate_distance(dictionary):
         den1 += a ** 2
         den2 += b ** 2
     return num/(math.sqrt(den1)*math.sqrt(den2))
-
-
-
 def similarity(d1, d2):
     '''
         Compute the document distance as given in the PDF
@@ -42,8 +39,6 @@ def similarity(d1, d2):
     common_dict = build_dict(common_dict, string1_words, 0)
     common_dict = build_dict(common_dict, string2_words, 1)
     return calculate_distance(common_dict)
-    
-
 def load_stopwords(filename):
     '''
         loads stop words from a file and returns a dictionary
