@@ -30,6 +30,9 @@ def calculate_distance(dictionary):
         num += val_1 * val_2
         den1 += val_1 ** 2
         den2 += val_2 ** 2
+    print(num)
+    print(den1)
+    print(den2)
     return num/(math.sqrt(den1)*math.sqrt(den2))
 def similarity(input_val_1, input_val_2):
     '''
