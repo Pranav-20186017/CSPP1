@@ -4,7 +4,7 @@
 def generate_dic(input1, input2):
 	new_input_1 = str(input1.lower())
 	new_input_2 = str(input2.lower())
-	spec_char  = "!@#$%^&*()~_-+=[]'.?"
+	spec_char  = "!?.,'"
 	for i in new_input_1:
 		if i in spec_char:
 			new_input_1.replace(i,"")
