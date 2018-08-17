@@ -1,16 +1,19 @@
 '''
     Document Distance - A detailed description is given in the PDF
 '''
-def generate_dic(input1):
+def generate_list(input1):
     '''generate a dictionary of words'''
     new_input_1 = str(input1.lower())
-    spec_char = "!@#$%^&*(),-_+=;:'.?"
+    spec_char = "!@#$%^&*(),-_+=;:.?"
     ver_2_inp1 = ""
     for i in new_input_1:
         if i not in spec_char:
             ver_2_inp1 += i
     temp1 = ver_2_inp1.split()
     return temp1
+def remove_stopwords(l1, l2):
+    stopwords = load_stopwords("stopwords.txt")
+    print(stopwords)
 # def similarity(dict1, dict2):
 #     '''
 #         Compute the document distance as given in the PDF
@@ -32,10 +35,8 @@ def main():
     input1 = input()
     input2 = input()
 
-    l1 = generate_dic(input1)
-    l2= generate_dic(input2)
-    print(l1)
-    print(l2)
-
+    l1 = generate_list(input1)
+    l2= generate_list(input2)
+    generate_dic(l1, l2)
 if __name__ == '__main__':
     main()
