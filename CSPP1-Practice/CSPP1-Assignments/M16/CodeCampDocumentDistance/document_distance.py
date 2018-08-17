@@ -14,7 +14,8 @@ def build_dict(dictionary, words_list, index):
     '''build a dictionary'''
     stopwords = load_stopwords("stopwords.txt")
     for word in words_list:
-        if word not in stopwords and len(word) > 0:
+        length = len(word)
+        if word not in stopwords and length > 0:
             if word not in dictionary:
                 dictionary[word] = [0, 0]
             dictionary[word][index] += 1
