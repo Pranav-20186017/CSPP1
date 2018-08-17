@@ -22,6 +22,7 @@ def generate_dic(input1, input2):
         temp = ver_2_inp1.split(" ")
         array_1.append(temp[j])
         array_1.append(temp[j+1])
+        j += 1
     print(array_1)
 
 # def similarity(dict1, dict2):
