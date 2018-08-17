@@ -24,7 +24,7 @@ def calculate_distance(dictionary):
     num = 0
     den1 = 0
     den2 = 0
-    for a,b in dictionary.values():
+    for a, b in dictionary.values():
         num += a * b
         den1 += a ** 2
         den2 += b ** 2
