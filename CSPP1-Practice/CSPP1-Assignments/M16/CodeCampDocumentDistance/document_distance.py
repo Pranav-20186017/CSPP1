@@ -4,13 +4,7 @@
 import re
 import math
 def tokenize(d1):
-    # ["".join(word) for word in d1 if word.isalpha()]
-    # for word in d1:
-    #     if word.isalpha() or word == " ":
-    #         input_str += word
-    # words_list = d1.lower().split()
-    # for word in words_list:         
-    #     word.strip()
+    """Split strings into tokens"""
     word_list1 = []
     words_list = d1.lower().split()
     for word in words_list:
@@ -26,6 +20,7 @@ def build_dict(dictionary, words_list, index):
     return dictionary
 
 def calculate_distance(dictionary):
+    """Compute the distance"""
     num = 0
     den1 = 0
     den2 = 0
