@@ -18,7 +18,7 @@ def remove_stopwords(l1, l2):
     #print(removal)
     for i in l1:
     	if i in removal:
-    		l1.remove(i)
+    		i=None
     print(l1)
 # def similarity(dict1, dict2):
 #     '''
