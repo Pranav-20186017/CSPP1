@@ -38,6 +38,8 @@ def main():
     l1 = generate_list(input1)
     l2= generate_list(input2)
     #generate_dic(l1, l2)
+    print(l1)
+    print(l2)
     remove_stopwords(l1, l2)
 if __name__ == '__main__':
     main()
