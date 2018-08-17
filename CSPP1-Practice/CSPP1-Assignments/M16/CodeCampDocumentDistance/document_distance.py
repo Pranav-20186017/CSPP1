@@ -3,10 +3,10 @@
 '''
 import re
 import math
-def tokenize(d1):
+def tokenize(input_val):
     """Split strings into tokens"""
     word_list1 = []
-    words_list = d1.lower().split()
+    words_list = input_val.lower().split()
     for word in words_list:
         word_list1.append(re.sub('[^a-z]', "", word).strip())
     return word_list1
