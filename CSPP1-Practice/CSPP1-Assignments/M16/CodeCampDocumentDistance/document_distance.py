@@ -16,11 +16,11 @@ def generate_dic(input1, input2):
             ver_2_inp2 += i
     print(ver_2_inp1)
     print(ver_2_inp2)
-def similarity(dict1, dict2):
+# def similarity(dict1, dict2):
     '''
         Compute the document distance as given in the PDF
     '''
-    pass
+    # pass
 
 def load_stopwords(filename):
     '''
