@@ -26,10 +26,10 @@ def calculate_distance(dictionary):
     num = 0
     den1 = 0
     den2 = 0
-    for a, b in dictionary.values():
-        num += a * b
-        den1 += a ** 2
-        den2 += b ** 2
+    for val_1, val_2 in dictionary.values():
+        num += val_1 * val_2
+        den1 += val_1 ** 2
+        den2 += val_2 ** 2
     return num/(math.sqrt(den1)*math.sqrt(den2))
 def similarity(d1, d2):
     '''
