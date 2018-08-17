@@ -11,6 +11,7 @@ def tokenize(input_val):
         word_list1.append(re.sub('[^a-z]', "", word).strip())
     return word_list1
 def build_dict(dictionary, words_list, index):
+    '''build a dictionary'''
     stopwords = load_stopwords("stopwords.txt")
     for word in words_list:
         if word not in stopwords and len(word) > 0:
