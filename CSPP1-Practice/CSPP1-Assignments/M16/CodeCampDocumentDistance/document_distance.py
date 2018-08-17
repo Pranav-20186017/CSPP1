@@ -14,6 +14,15 @@ def generate_list(input1):
 def remove_stopwords(l1, l2):
     stopwords = load_stopwords("stopwords.txt")
     print(stopwords)
+    removal= list(stopwords.keys())
+    for i in l1:
+        if i in removal:
+            l1.remove(i)
+    for i in l2:
+        if i in removal:
+            l2.remove(i)
+    print(l1)
+    print(l2)
 # def similarity(dict1, dict2):
 #     '''
 #         Compute the document distance as given in the PDF
@@ -38,8 +47,8 @@ def main():
     l1 = generate_list(input1)
     l2= generate_list(input2)
     #generate_dic(l1, l2)
-    print(l1)
-    print(l2)
+    # print(l1)
+    # print(l2)
     remove_stopwords(l1, l2)
 if __name__ == '__main__':
     main()
