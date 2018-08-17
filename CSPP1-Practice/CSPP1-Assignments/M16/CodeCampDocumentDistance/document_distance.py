@@ -15,14 +15,7 @@ def remove_stopwords(l1, l2):
     stopwords = load_stopwords("stopwords.txt")
     #print(stopwords)
     removal= list(stopwords.keys())
-    for i in l1:
-        if i in removal:
-            l1.remove(i)
-    for i in l2:
-        if i in removal:
-            l2.remove(i)
-    print(l1)
-    print(l2)
+    print(removal)
 # def similarity(dict1, dict2):
 #     '''
 #         Compute the document distance as given in the PDF
