@@ -4,7 +4,7 @@
 def generate_list(input1):
     '''generate a dictionary of words'''
     new_input_1 = str(input1.lower())
-    spec_char = "!@#$%^&*(),-_+=;:.?"
+    spec_char = "!@#$%^&*(),-_+=;:.?\n"
     ver_2_inp1 = ""
     for i in new_input_1:
         if i not in spec_char:
@@ -37,6 +37,7 @@ def main():
 
     l1 = generate_list(input1)
     l2= generate_list(input2)
-    generate_dic(l1, l2)
+    #generate_dic(l1, l2)
+    remove_stopwords(l1, l2)
 if __name__ == '__main__':
     main()
