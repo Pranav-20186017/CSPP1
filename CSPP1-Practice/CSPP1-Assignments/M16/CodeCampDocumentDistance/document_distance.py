@@ -17,7 +17,7 @@ def tokenize(d1):
         word_list1.append(re.sub('[^a-z]',"",word).strip())
     return word_list1
 def build_dict(dictionary, words_list, index):
-    stopwords = load_stopwords()
+    stopwords = load_stopwords("stopwords.txt")
     for word in words_list:
         if word not in stopwords and len(word)>0:
             if word not in dictionary:
@@ -49,11 +49,10 @@ def similarity(d1, d2):
     return calculate_distance(common_dict)
     
 
-def load_stopwords():
+def load_stopwords(filename):
     '''
         loads stop words from a file and returns a dictionary
     '''
-    filename = "stopwords.txt"
     stopwords = {}
     with open("filename", 'r') as filename:
         for line in filename:
