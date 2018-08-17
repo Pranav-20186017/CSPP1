@@ -8,7 +8,7 @@ def tokenize(d1):
     word_list1 = []
     words_list = d1.lower().split()
     for word in words_list:
-        word_list1.append(re.sub('[^a-z]', "" , word).strip())
+        word_list1.append(re.sub('[^a-z]', "", word).strip())
     return word_list1
 def build_dict(dictionary, words_list, index):
     stopwords = load_stopwords("stopwords.txt")
