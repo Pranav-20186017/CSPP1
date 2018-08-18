@@ -1,4 +1,10 @@
 '''
+*******************************************
+
+Author: Pranav Surampudi
+
+
+*******************************************
     Tiny Search Engine - Part 1 - Build a search index
 
     In this programming assingment you are given with some text documents as input.
