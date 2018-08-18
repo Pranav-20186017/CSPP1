@@ -70,7 +70,7 @@ def process_queries(search_index, queries):
         print the results returned by search function
     '''
     # print(search_index)
-    ans=[]
+    ans = []
     # ans_set= set()
     for j in queries:
             ans.append(j)
