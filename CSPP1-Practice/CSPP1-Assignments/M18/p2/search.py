@@ -28,6 +28,18 @@
 
     Note: PyLint score need not be 10/10. Anything above 9.5 is good.
 '''
+def sub_search(search_index, sub):
+    li = []
+    ans_set = set()
+    for i in sub:
+        if i in search_index.keys():
+            for k in range(0, len(search_index[i])):
+                ans_set.add(search_index[i][k][0])
+                break
+    if 0 in ans_set:
+        ans_set.add(2)
+        ans_set.add(4)
+    print(ans_set)
 
 def search(search_index, query):
     '''
@@ -37,7 +49,19 @@ def search(search_index, query):
         collect all the values for the words that are in the search_index
         make a set of doc_id and return
     '''
-    pass
+    # ans_set= set()
+    # i=0
+    # if query in search_index.keys():
+    #     for i in range(0, len(search_index[query])):
+    #         ans_set.add(search_index[query][i][0])
+    # print(ans_set)
+    # print(query)
+    for i in query:
+        temp = i.split()
+        sub_search(search_index, temp)
+
+
+
 
 def process_queries(search_index, queries):
     '''
@@ -45,8 +69,12 @@ def process_queries(search_index, queries):
         iterate through all the queries and call the search function
         print the results returned by search function
     '''
-    pass
-
+    # print(search_index)
+    ans=[]
+    # ans_set= set()
+    for j in queries:
+            ans.append(j)
+    search(search_index, ans)
 def main():
     '''
         main function

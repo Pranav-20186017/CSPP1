@@ -40,8 +40,6 @@ def clean_special_char(string):
         if i not in spec:
             res += i
     return res
-def format(temp):
-    
 def word_list(text):
     '''
         Change case to lower and split the words using a SPACE
@@ -49,17 +47,18 @@ def word_list(text):
         return a list of words
     '''
     word_list1 = []
-    ans = []
+    new_list=[]
     for words_list in text:
         temp = ""
         temp = words_list.lower()
         temp = clean_special_char(temp)
         word_list1.append(temp)
     # print(word_list1)
-    for i in range(0, len(word_list1)):
-        temp = word_list1[i].split()
-        format()
-
+    for i in word_list1:
+        temp = i
+        new_list.append(temp.split(" "))
+    print(new_list)
+        
 def build_search_index(docs):
     '''
         Process the docs step by step as given below
