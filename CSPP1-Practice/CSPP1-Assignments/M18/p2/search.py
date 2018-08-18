@@ -73,7 +73,7 @@ def process_queries(search_index, queries):
     ans = []
     # ans_set= set()
     for j in queries:
-            ans.append(j)
+        ans.append(j)
     search(search_index, ans)
 def main():
     '''
