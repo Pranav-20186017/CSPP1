@@ -40,7 +40,6 @@ def sub_search(search_index, sub):
         ans_set.add(2)
         ans_set.add(4)
     print(ans_set)
-
 def search(search_index, query):
     '''
         function to search through the search index and return the results
@@ -59,10 +58,6 @@ def search(search_index, query):
     for i in query:
         temp = i.split()
         sub_search(search_index, temp)
-
-
-
-
 def process_queries(search_index, queries):
     '''
         function to process the search queries
