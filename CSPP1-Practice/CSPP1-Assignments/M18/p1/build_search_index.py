@@ -41,6 +41,13 @@ def clean_special_char(string):
         if i not in spec:
             res += i
     return res
+def remove_stop_wrods(temp):
+    removal = load_stopwords("stopwords.txt")
+    new_val = temp[:]
+    for i in range(0,len(new_val)):
+        if new_val[i] in removal:
+            del new_val[i]
+    return new_val
 def word_list(text):
     '''
         Change case to lower and split the words using a SPACE
@@ -56,8 +63,10 @@ def word_list(text):
     # print(word_list1)
     for i in word_list1:
         temp = i.split()
-        format()
-
+        temp = clean_special_char(temp)
+        temp = remove_stop_words(temp)
+        word_list1.append(temp)
+    return word_list1
 def build_search_index(docs):
     '''
         Process the docs step by step as given below
@@ -76,8 +85,14 @@ def build_search_index(docs):
     # return search index
 # helper function to print the search index
 # use this to verify how the search index looks
-    search_index = {docs}
-    search_index.add(docs)
+    val = words_list(docs)
+    search_index = dict()
+    for i in enumerate(val):
+        line = getline(i)
+        if i not in dictionary:
+            search_index[i] = (0,0)
+        search_index[line][i] += list(line, i+1)
+    return search_index
 
 def print_search_index(index):
     '''
