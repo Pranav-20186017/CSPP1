@@ -35,7 +35,6 @@
 '''
 def sub_search(search_index, sub):
     '''search for the sub parts of a query'''
-    li = []
     ans_set = set()
     for i in sub:
         if i in search_index.keys():
