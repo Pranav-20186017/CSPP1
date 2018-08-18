@@ -1,4 +1,9 @@
 '''
+    **********************************************
+    Author: Pranav Surampudi
+    Date: 18 August 2018
+    Encoding: utf-8
+    ***********************************************
     Tiny Search Engine - Part 2 - Search
     In this programming assingment you are given the search index and search queries as input.
     Complete the program below to search in the index. Don't worry, it is explained below.
@@ -29,6 +34,7 @@
     Note: PyLint score need not be 10/10. Anything above 9.5 is good.
 '''
 def sub_search(search_index, sub):
+    '''search for the sub parts of a query'''
     li = []
     ans_set = set()
     for i in sub:
