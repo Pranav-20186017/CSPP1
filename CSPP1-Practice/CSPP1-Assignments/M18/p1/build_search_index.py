@@ -102,8 +102,8 @@ def main():
         i += 1
 
     # call print to display the search index
-    #print_search_index(build_search_index(documents))
-    word_list(documents)
+    print_search_index(build_search_index(documents))
+    #word_list(documents)
 
 if __name__ == '__main__':
     main()
