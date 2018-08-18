@@ -20,7 +20,7 @@
         .
     }
 '''
-import re
+
 
 # helper function to load the stop words from a file
 def load_stopwords(filename):
@@ -34,12 +34,13 @@ def load_stopwords(filename):
     return stopwords
 
 def clean_special_char(string):
+    '''cleans the input string'''
     spec = "~`!@#$%^&'*();,.?-\n"
     res = ""
     for i in string:
         if i not in spec:
             res += i
-    return res    
+    return res
 def word_list(text):
     '''
         Change case to lower and split the words using a SPACE
@@ -47,15 +48,14 @@ def word_list(text):
         return a list of words
     '''
     word_list1 = []
-    ans = []
     for words_list in text:
         temp = ""
         temp = words_list.lower()
         temp = clean_special_char(temp)
         word_list1.append(temp)
     # print(word_list1)
-    for i in range(0, len(word_list1)):
-        temp = word_list1[i].split()
+    for i in word_list1:
+        temp = i.split()
         format()
 
 def build_search_index(docs):
@@ -74,10 +74,11 @@ def build_search_index(docs):
         # add or update the words of the doc to the search index
 
     # return search index
-    
-
 # helper function to print the search index
 # use this to verify how the search index looks
+    search_index = {docs}
+    search_index.add(docs)
+
 def print_search_index(index):
     '''
         print the search index
