@@ -39,9 +39,7 @@ def clean_special_char(string):
     for i in string:
         if i not in spec:
             res += i
-    return res
-def format(temp):
-    
+    return res    
 def word_list(text):
     '''
         Change case to lower and split the words using a SPACE
