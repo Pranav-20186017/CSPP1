@@ -25,14 +25,14 @@ class Ceaser:
         print(ans)
     def build_dict(self, shift):
         '''build a dictionary of substitution values'''
-        al = "-"+string.ascii_lowercase+string.ascii_lowercase
-        cal = "-"+string.ascii_uppercase+string.ascii_uppercase
+        small_alpha = "-"+string.ascii_lowercase+string.ascii_lowercase
+        cap_alpha = "-"+string.ascii_uppercase+string.ascii_uppercase
         adict = {}
-        for i in al:
-            new_val = al[al.index(i) + shift]
+        for i in small_alpha:
+            new_val = small_alpha[small_alpha.index(i) + shift]
             adict[i] = new_val
-        for i in cal:
-            new_val = cal[cal.index(i) + shift]
+        for i in cap_alpha:
+            new_val = cap_alpha[cap_alpha.index(i) + shift]
             adict[i] = new_val
         del adict['-']
         print(shift)
