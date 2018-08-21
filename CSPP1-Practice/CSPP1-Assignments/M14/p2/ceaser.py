@@ -10,16 +10,16 @@ class Ceaser:
     '''class to compute a ceaser cipher for a given plain text'''
     def __init__(self, plain):
         self.plain = plain
-    def shift(self, n):
+    def shift(self, number):
         '''shift the alphabets of the plain text'''
         al = "-"+string.ascii_lowercase+string.ascii_lowercase
         cal = "-"+string.ascii_uppercase+string.ascii_uppercase
         ans = ""
         for i in range(0, len(self.plain)):
             if self.plain[i] in al:
-                ans = ans + al[al.index(self.plain[i])+n]
+                ans = ans + al[al.index(self.plain[i]) + number]
             elif self.plain[i] in cal:
-                ans = ans + cal[cal.index(self.plain[i])+n]
+                ans = ans + cal[cal.index(self.plain[i]) + number]
             else:
                 ans += self.plain[i]
         print(ans)
