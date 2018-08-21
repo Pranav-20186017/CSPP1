@@ -1,6 +1,7 @@
 def main():
-	inp = input()
-	data = inp.split()
-	print(data)
+	a = input()
+	b = input()
+	c = input()
+	print(a,b,c)
 if __name__ == "__main__":
 	main()
