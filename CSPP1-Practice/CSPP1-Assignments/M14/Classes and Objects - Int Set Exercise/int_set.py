@@ -1,7 +1,11 @@
 # Exercise: int set
 
 # Consider the following code from the last lecture video:
-
+# ***************************************************
+# Author: Pranav Surampudi
+# Date: 21 Aug 2018
+# Encoding: utf - 8
+# ***************************************************
 class intSet(object):
     """An intSet is a set of integers
     The value is represented by a list of ints, self.vals.
@@ -59,9 +63,6 @@ class intSet(object):
 #   2. Add the appropriate method(s) so that len(s) returns the number of elements in s.
 
 # Hint: look through the Python docs to figure out what you'll need to solve this problem.
-
-
-        
 def main():
     setA = intSet()
     setB = intSet()
