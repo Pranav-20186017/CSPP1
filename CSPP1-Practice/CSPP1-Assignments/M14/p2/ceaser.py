@@ -37,8 +37,8 @@ class Ceaser:
         del adict['-']
         print(shift)
         print(adict)
-        T = Ceaser(self.plain)
-        T.shift(shift)
+        temp_obj = Ceaser(self.plain)
+        temp_obj.shift(shift)
 # K = ceaser("Hello, World!").build_dict(4)
 # K = ceaser("Hello, World!").build_dict(8)
 def main():
