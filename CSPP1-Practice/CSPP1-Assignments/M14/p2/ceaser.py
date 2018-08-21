@@ -11,6 +11,7 @@ class Ceaser:
     def __init__(self, plain):
         self.plain = plain
     def shift(self, n):
+        '''shift the alphabets of the plain text'''
         al = "-"+string.ascii_lowercase+string.ascii_lowercase
         cal = "-"+string.ascii_uppercase+string.ascii_uppercase
         ans = ""
@@ -23,6 +24,7 @@ class Ceaser:
                 ans += self.plain[i]
         print(ans)
     def build_dict(self, shift):
+        '''build a dictionary of substitution values'''
         al = "-"+string.ascii_lowercase+string.ascii_lowercase
         cal = "-"+string.ascii_uppercase+string.ascii_uppercase
         adict = {}
