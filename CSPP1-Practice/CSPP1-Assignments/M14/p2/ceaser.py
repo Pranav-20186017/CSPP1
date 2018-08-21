@@ -2,11 +2,11 @@ import string
 class ceaser:
     def __init__(self, plain):
         self.plain = plain
-    def shift(self,n):
+    def shift(self, n):
         al = "-"+string.ascii_lowercase+string.ascii_lowercase
         cal = "-"+string.ascii_uppercase+string.ascii_uppercase
         ans = ""
-        for i in range(0,len(self.plain)):
+        for i in range(0, len(self.plain)):
             if self.plain[i] in al:
                 ans = ans + al[al.index(self.plain[i])+n]
             elif self.plain[i] in cal:
@@ -29,7 +29,6 @@ class ceaser:
         print(adict)
         T = ceaser(self.plain)
         T.shift(shift)
-
 # K = ceaser("Hello, World!").build_dict(4)
 # K = ceaser("Hello, World!").build_dict(8)
 def main():
@@ -40,5 +39,3 @@ def main():
     K = ceaser(str(string)).build_dict(int(shift_2))
 if __name__ == "__main__":
     main()
-
-
