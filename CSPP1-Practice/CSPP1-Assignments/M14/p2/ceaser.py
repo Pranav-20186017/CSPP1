@@ -46,7 +46,10 @@ def main():
     inp_str = input()
     shift_1 = int(input())
     shift_2 = int(input())
-    K = Ceaser(str(inp_str)).build_dict(int(shift_1))
-    K = Ceaser(str(inp_str)).build_dict(int(shift_2))
+
+    K = Ceaser(str(inp_str))
+    K.build_dict(int(shift_1))
+    K = Ceaser(str(inp_str))
+    K.build_dict(int(shift_2))
 if __name__ == "__main__":
     main()
