@@ -6,7 +6,7 @@ Encoding: utf-8
 *******************************************************
 """
 import string
-class ceaser:
+class Ceaser:
     def __init__(self, plain):
         self.plain = plain
     def shift(self, n):
@@ -42,7 +42,7 @@ def main():
     string = input()
     shift_1 = int(input())
     shift_2 = int(input())
-    K = ceaser(str(string)).build_dict(int(shift_1))
-    K = ceaser(str(string)).build_dict(int(shift_2))
+    K = Ceaser(str(string)).build_dict(int(shift_1))
+    K = Ceaser(str(string)).build_dict(int(shift_2))
 if __name__ == "__main__":
     main()
