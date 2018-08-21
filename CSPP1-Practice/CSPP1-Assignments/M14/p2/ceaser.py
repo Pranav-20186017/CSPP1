@@ -36,7 +36,6 @@ def main():
 	string = input()
 	shift_1 = int(input())
 	shift_2 = int(input())
-	data = inp.split("\n")
 	K = ceaser(str(string)).build_dict(int(shift_1))
 	K = ceaser(str(string)).build_dict(int(shift_2))
 if __name__ == "__main__":
