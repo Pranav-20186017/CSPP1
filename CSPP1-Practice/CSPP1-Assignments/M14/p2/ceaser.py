@@ -12,12 +12,12 @@ class Ceaser:
         self.plain = plain
     def shift(self, number):
         '''shift the alphabets of the plain text'''
-        al = "-"+string.ascii_lowercase+string.ascii_lowercase
+        small_alpha = "-"+string.ascii_lowercase+string.ascii_lowercase
         cal = "-"+string.ascii_uppercase+string.ascii_uppercase
         ans = ""
         for i in range(0, len(self.plain)):
-            if self.plain[i] in al:
-                ans = ans + al[al.index(self.plain[i]) + number]
+            if self.plain[i] in small_alpha:
+                ans = ans + small_alpha[small_alpha.index(self.plain[i]) + number]
             elif self.plain[i] in cal:
                 ans = ans + cal[cal.index(self.plain[i]) + number]
             else:
