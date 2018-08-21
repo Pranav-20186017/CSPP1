@@ -7,6 +7,7 @@ Encoding: utf-8
 """
 import string
 class Ceaser:
+    '''class to compute a ceaser cipher for a given plain text'''
     def __init__(self, plain):
         self.plain = plain
     def shift(self, n):
@@ -34,7 +35,7 @@ class Ceaser:
         del adict['-']
         print(shift)
         print(adict)
-        T = ceaser(self.plain)
+        T = Ceaser(self.plain)
         T.shift(shift)
 # K = ceaser("Hello, World!").build_dict(4)
 # K = ceaser("Hello, World!").build_dict(8)
