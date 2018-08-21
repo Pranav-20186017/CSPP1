@@ -33,10 +33,12 @@ class ceaser:
 # K = ceaser("Hello, World!").build_dict(4)
 # K = ceaser("Hello, World!").build_dict(8)
 def main():
-	inp = input()
+	string = input()
+	shift_1 = int(input())
+	shift_2 = int(input())
 	data = inp.split("\n")
-	K = ceaser(str(data[0])).build_dict(int(data[1]))
-	K = ceaser(str(data[0])).build_dict(int(data[2]))
+	K = ceaser(str(string)).build_dict(int(shift_1))
+	K = ceaser(str(string)).build_dict(int(shift_2))
 if __name__ == "__main__":
 	main()
 
