@@ -1,3 +1,10 @@
+'''
+*********************************************************************
+Author: Pranav Surampudi
+Date: 21 August 2018
+Encoding: utf-8
+********************************************************************
+'''
 import string
 class Ceaser:
     '''class to compute a ceaser cipher for a given plain text'''
