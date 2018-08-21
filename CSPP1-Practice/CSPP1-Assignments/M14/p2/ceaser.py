@@ -42,6 +42,7 @@ class Ceaser:
 # K = ceaser("Hello, World!").build_dict(4)
 # K = ceaser("Hello, World!").build_dict(8)
 def main():
+    '''main function'''
     string = input()
     shift_1 = int(input())
     shift_2 = int(input())
