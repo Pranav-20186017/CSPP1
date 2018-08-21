@@ -43,10 +43,10 @@ class Ceaser:
 # K = ceaser("Hello, World!").build_dict(8)
 def main():
     '''main function'''
-    string = input()
+    inp_str = input()
     shift_1 = int(input())
     shift_2 = int(input())
-    K = Ceaser(str(string)).build_dict(int(shift_1))
-    K = Ceaser(str(string)).build_dict(int(shift_2))
+    K = Ceaser(str(inp_str)).build_dict(int(shift_1))
+    K = Ceaser(str(inp_str)).build_dict(int(shift_2))
 if __name__ == "__main__":
     main()
