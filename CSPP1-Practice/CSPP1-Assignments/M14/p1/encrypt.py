@@ -17,7 +17,7 @@ class Ceaser:
         ans = ""
         for i in range(0, len(self.plain)):
             if self.plain[i] in small_alpha:
-                ans = ans + small_alpha[small_alpha.index(self.plain[i]) + number]
+                ans += small_alpha[small_alpha.index(self.plain[i]) + number]
             elif self.plain[i] in cal:
                 ans = ans + cal[cal.index(self.plain[i]) + number]
             else:
