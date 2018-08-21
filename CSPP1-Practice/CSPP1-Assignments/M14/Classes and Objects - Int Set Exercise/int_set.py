@@ -46,8 +46,8 @@ class intSet(object):
                 li.append(i)
         C = intSet()
         for i in li:
-            C.insert(i)
-        print(C) 
+           C.insert(i)
+        print(C)
     def __len__(self):
         count = 0
         for i in self.vals:
@@ -74,7 +74,7 @@ def main():
         setA.insert(int(i))
     for j in l2:
         setB.insert(int(j))
-    intSet.intersect(setA,setB)
+    (intSet.intersect(setA,setB))
     print(len(setA))
     print(len(setB))
 
