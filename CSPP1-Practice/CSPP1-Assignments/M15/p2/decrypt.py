@@ -8,7 +8,7 @@ Encoding: utf-8
 class Caesar:
     '''This a class for Caesar Cipher'''
     def __init__(self, string, ciph_val):
-        if((type(string) is not str) or type(ciph_val) is not int):
+        if((isinstance(string) is not str) or isinstance(ciph_val) is not int):
             raise Exception('Not the right arguments')
         self.__ciph_val = ciph_val
         self.__string = string
