@@ -11,11 +11,9 @@ class Caesar:
         self.__ciph_val = ciph_val
         self.__string = string
     def __len__(self):
-        list_temp = []
         count = 0
-        for i in self.__string:
+        for _ in self.__string:
             count += 1
-            list_temp.append(i)
         return count
     def solve_cipher(self):
         '''decrypt the cipher'''
