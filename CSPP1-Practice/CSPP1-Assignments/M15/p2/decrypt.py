@@ -38,11 +38,11 @@ class Caesar:
         return new
 def main():
     '''Main Function'''
-    f = open("story.txt", "r")
-    s = str("")
-    for i in f.read():
-        s += i
-    obj = Caesar(str(s), 10)
+    f_open = open("story.txt", "r")
+    string = str("")
+    for i in f_open.read():
+        string += i
+    obj = Caesar(str(string), 10)
     print(obj.solve_cipher())
 if __name__ == "__main__":
     main()
