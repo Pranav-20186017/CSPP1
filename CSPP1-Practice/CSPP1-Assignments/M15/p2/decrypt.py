@@ -26,7 +26,7 @@ class Caesar_cipher(object):
                     continue
                 else:
                     dec_str += x
-        a= ()
+        a = ()
         b = dec_str
         c = self.__ciph_val
         new = a + (c, b)
