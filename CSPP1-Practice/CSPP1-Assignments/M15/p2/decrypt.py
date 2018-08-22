@@ -6,6 +6,7 @@ class Caesar_cipher(object):
         self.__ciph_val = ciph_val
         self.__string = string
     def solve_cipher(self):
+        '''decrypt the cipher'''
         dec_str = ""
         for x in self.__string:
             if(ord(x) >= 65 and ord(x) <= 90):
@@ -31,7 +32,7 @@ class Caesar_cipher(object):
         new = a + (c, b)
         return new
 def main():
-	'''Main Function'''
+    '''Main Function'''
     f = open("story.txt", "r")
     s = str("")
     for i in f.read():
