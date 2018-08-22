@@ -45,7 +45,8 @@ def main():
     for i in f_open.read():
         string += i
     obj = Caesar(str(string), 10)
-    a = len(string)
+    pylint = len(string)
+    pylint += 1
     print(obj.solve_cipher())
 if __name__ == "__main__":
     main()
