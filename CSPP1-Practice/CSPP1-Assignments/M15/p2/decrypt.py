@@ -36,8 +36,6 @@ class Caesar:
         cipher_number = self.__ciph_val
         new = tup + (cipher_number, dec)
         return new
-        def __len__(self):
-            return "inside length method"
 def main():
     '''Main Function'''
     f_open = open("story.txt", "r")
@@ -45,8 +43,6 @@ def main():
     for i in f_open.read():
         string += i
     obj = Caesar(str(string), 10)
-    pylint = obj.len(string)
-    pylint += 1
     print(obj.solve_cipher())
 if __name__ == "__main__":
     main()
