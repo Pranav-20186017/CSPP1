@@ -1,3 +1,10 @@
+'''
+**********************************
+Author: Pranav Surampudi
+Date: 22 August 2018
+Encoding: utf-8
+**********************************
+'''
 class Caesar:
     '''This a class for Caesar Cipher'''
     def __init__(self, string, ciph_val):
