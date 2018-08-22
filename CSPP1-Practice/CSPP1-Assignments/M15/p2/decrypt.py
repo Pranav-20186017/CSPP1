@@ -1,6 +1,6 @@
-class caesar_cipher(object):
-    "This a class for Caesar Cipher"
-    def __init__(self, string,ciph_val):
+class Caesar_cipher(object):
+    '''This a class for Caesar Cipher'''
+    def __init__(self, string, ciph_val):
         if((type(string) is not str) or type(ciph_val) is not int):
             raise Exception('Not the right arguments')
         self.__ciph_val = ciph_val
@@ -20,7 +20,7 @@ class caesar_cipher(object):
                 diff += 97
                 dec_str += chr(diff)
             else:
-                if(x == ' '):
+                if x == ' ':
                     dec_str += x
                     continue
                 else:
@@ -28,14 +28,15 @@ class caesar_cipher(object):
         a= ()
         b = dec_str
         c = self.__ciph_val
-        new = a +(c,b)
+        new = a + (c, b)
         return new
 def main():
-    f = open("story.txt","r")
+	'''Main Function'''
+    f = open("story.txt", "r")
     s = str("")
     for i in f.read():
         s += i
-    obj = caesar_cipher(s,10)
+    obj = Caesar_cipher(s, 10)
     print(obj.solve_cipher())
 if __name__ == "__main__":
     main()
