@@ -1,4 +1,4 @@
-class Caesar_cipher(object):
+class Caesar_Cipher(object):
     '''This a class for Caesar Cipher'''
     def __init__(self, string, ciph_val):
         if((type(string) is not str) or type(ciph_val) is not int):
@@ -37,7 +37,7 @@ def main():
     s = str("")
     for i in f.read():
         s += i
-    obj = Caesar_cipher(s, 10)
+    obj = Caesar_Cipher(s, 10)
     print(obj.solve_cipher())
 if __name__ == "__main__":
     main()
