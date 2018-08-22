@@ -31,10 +31,10 @@ class Caesar:
                     continue
                 else:
                     dec_str += xinp
-        a = ()
-        b = dec_str
-        c = self.__ciph_val
-        new = a + (c, b)
+        tup = ()
+        dec = dec_str
+        cipher_number = self.__ciph_val
+        new = tup + (cipher_number, dec)
         return new
 def main():
     '''Main Function'''
