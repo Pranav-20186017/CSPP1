@@ -13,24 +13,24 @@ class Caesar:
     def solve_cipher(self):
         '''decrypt the cipher'''
         dec_str = ""
-        for x in self.__string:
-            if(ord(x) >= 65 and ord(x) <= 90):
-                diff = ord(x) - 65
+        for xinp in self.__string:
+            if(ord(xinp) >= 65 and ord(xinp) <= 90):
+                diff = ord(xinp) - 65
                 diff = (diff - self.__ciph_val) % 26
                 diff += 65
                 dec_str += chr(diff)
-            elif(ord(x) >= 97 and ord(x) <= 122):
-                diff = ord(x) - self.__ciph_val
-                diff = ord(x) - 97
+            elif(ord(xinp) >= 97 and ord(xinp) <= 122):
+                diff = ord(xinp) - self.__ciph_val
+                diff = ord(xinp) - 97
                 diff = (diff - self.__ciph_val) % 26
                 diff += 97
                 dec_str += chr(diff)
             else:
-                if x == ' ':
-                    dec_str += x
+                if xinp == ' ':
+                    dec_str += xinp
                     continue
                 else:
-                    dec_str += x
+                    dec_str += xinp
         a = ()
         b = dec_str
         c = self.__ciph_val
@@ -38,7 +38,7 @@ class Caesar:
         return new
 def main():
     '''Main Function'''
-    f = open("story.txt", "r")
+    f = open("story.txinpt", "r")
     s = str("")
     for i in f.read():
         s += i
