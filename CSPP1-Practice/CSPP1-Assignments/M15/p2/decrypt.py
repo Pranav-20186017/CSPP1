@@ -8,8 +8,8 @@ Encoding: utf-8
 class Caesar:
     '''This a class for Caesar Cipher'''
     def __init__(self, string, ciph_val):
-        if((isinstance(string,str)) or isinstances(ciph_val,int)):
-            raise Exception('Not the right arguments')
+        # if((isinstance(string,str)) or isinstances(ciph_val,int)):
+        #     raise Exception('Not the right arguments')
         self.__ciph_val = ciph_val
         self.__string = string
     def solve_cipher(self):
