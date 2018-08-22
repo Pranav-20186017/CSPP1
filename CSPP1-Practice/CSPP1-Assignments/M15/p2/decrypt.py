@@ -38,7 +38,7 @@ class Caesar:
         return new
 def main():
     '''Main Function'''
-    f = open("story.txinpt", "r")
+    f = open("story.txt", "r")
     s = str("")
     for i in f.read():
         s += i
