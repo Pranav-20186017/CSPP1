@@ -36,6 +36,8 @@ class Caesar:
         cipher_number = self.__ciph_val
         new = tup + (cipher_number, dec)
         return new
+        def __len__():
+            print("inside length method")
 def main():
     '''Main Function'''
     f_open = open("story.txt", "r")
