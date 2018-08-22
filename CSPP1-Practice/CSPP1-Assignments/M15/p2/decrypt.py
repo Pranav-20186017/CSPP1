@@ -44,7 +44,7 @@ def main():
     s = str("")
     for i in f.read():
         s += i
-    obj = Caesar(s, 10)
+    obj = Caesar(str(s), 10)
     print(obj.solve_cipher())
 if __name__ == "__main__":
     main()
