@@ -228,7 +228,9 @@ class CiphertextMessage(Message):
             self.message_text (string, determined by input text)
             self.valid_words (list, determined using helper function load_words)
         '''
-        pass
+        self.message_text = text
+        self.valid_words = load_words("words.txt")
+
 
     def decrypt_message(self):
         '''
@@ -273,6 +275,8 @@ class CiphertextMessage(Message):
         return (26-max_shift, self.message_text_encrypted)
 
 
+
+
 ### DO NOT MODIFY THIS METHOD ###
 def main():
     ''' This method is provided to handle testcases'''
@@ -281,4 +285,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
