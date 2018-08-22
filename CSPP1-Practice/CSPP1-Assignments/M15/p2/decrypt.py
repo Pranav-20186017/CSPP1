@@ -1,4 +1,4 @@
-class Caesar(object):
+class Caesar:
     '''This a class for Caesar Cipher'''
     def __init__(self, string, ciph_val):
         if((type(string) is not str) or type(ciph_val) is not int):
