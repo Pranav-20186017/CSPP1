@@ -10,6 +10,11 @@ class Caesar:
     def __init__(self, string, ciph_val):
         self.__ciph_val = ciph_val
         self.__string = string
+    def __len__(self):
+        count = 0
+        for i in self.__string:
+            count += 1
+        return count
     def solve_cipher(self):
         '''decrypt the cipher'''
         dec_str = ""
