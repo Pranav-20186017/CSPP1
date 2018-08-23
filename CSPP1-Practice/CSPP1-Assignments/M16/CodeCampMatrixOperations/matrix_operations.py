@@ -19,7 +19,7 @@ def mult_matrix(X, Y, actual_dimension_one, actual_dimension_two):
         return result
     print("Error: Matrix shapes invalid for mult")
     return None
-def add_matrix(X, Y, actual_dimension_one, actual_dimension_two):
+def add_matrix(x_value, y_value, actual_dimension_one, actual_dimension_two):
     '''
         check if the matrix shapes are similar
         add the matrices and return the result matrix
@@ -30,7 +30,7 @@ def add_matrix(X, Y, actual_dimension_one, actual_dimension_two):
     try:
         if actual_dimension_one[0] == actual_dimension_two[0] and \
         actual_dimension_one[1] == actual_dimension_two[1]:
-            result = [[X[i][j] + Y[i][j]  for j in range(len(X[0]))] for i in range(len(X))]
+            result = [[x_value[i][j] + y_value[i][j]  for j in range(len(x_value[0]))] for i in range(len(x_value))]
             return result
     except IndexError:
         print("Error: Invalid input for the matrix")
