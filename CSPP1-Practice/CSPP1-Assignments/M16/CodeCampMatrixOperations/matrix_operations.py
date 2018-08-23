@@ -27,7 +27,8 @@ def add_matrix(X, Y,actual_dimension_one, actual_dimension_two):
     		result = [[X[i][j] + Y[i][j]  for j in range(len(X[0]))] for i in range(len(X))]
     		return result
     except IndexError:
-    	return "Error: Invalid input for the matrix"
+    	print("Error: Invalid input for the matrix")
+    	exit()
     else:
     	print("Error: Matrix shapes invalid for addition")
     	return None
