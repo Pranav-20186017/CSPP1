@@ -36,11 +36,11 @@ def main():
     # add matrix 1 and matrix 2
 
     # multiply matrix 1 and matrix 2
-    dimension_mat = input().split(',')
-    actual_dimension=[]
+    dimension_mat_one = input().split(',')
+    actual_dimension_one = []
     for i in dimension_mat:
-        actual_dimension.append(int(i))
-    print(actual_dimension)
+        actual_dimension_one.append(int(i))
+    print(actual_dimension_one)
 
 
 if __name__ == '__main__':
