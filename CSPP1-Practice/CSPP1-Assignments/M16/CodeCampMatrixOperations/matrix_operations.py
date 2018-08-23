@@ -15,12 +15,12 @@ def mult_matrix(X, Y, actual_dimension_one, actual_dimension_two):
         error message should be "Error: Matrix shapes invalid for mult"
     '''
     if actual_dimension_one[1] == actual_dimension_two[0]:
-        result = [[sum(a*b for a,b in zip(X_row, Y_col)) for Y_col in zip(*Y)] for X_row in X]
+        result = [[sum(a*b for a, b in zip(X_row, Y_col)) for Y_col in zip(*Y)] for X_row in X]
         return result
     else:
         print("Error: Matrix shapes invalid for mult")
         return None
-def add_matrix(X, Y,actual_dimension_one, actual_dimension_two):
+def add_matrix(X, Y, actual_dimension_one, actual_dimension_two):
     '''
         check if the matrix shapes are similar
         add the matrices and return the result matrix
@@ -29,7 +29,8 @@ def add_matrix(X, Y,actual_dimension_one, actual_dimension_two):
         error message should be "Error: Matrix shapes invalid for addition"
     '''
     try:
-        if actual_dimension_one[0] == actual_dimension_two[0] and actual_dimension_one[1] == actual_dimension_two[1]:
+        if actual_dimension_one[0] == actual_dimension_two[0] and
+        actual_dimension_one[1] == actual_dimension_two[1]:
             result = [[X[i][j] + Y[i][j]  for j in range(len(X[0]))] for i in range(len(X))]
             return result
     except IndexError:
