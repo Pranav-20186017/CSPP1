@@ -74,7 +74,8 @@ def main():
         for j in range(0, length):
             i[j] = int(i[j])
     for i in matrix_two:
-        for j in range(0, len(i)):
+        length = len(i)
+        for j in range(0, length):
             i[j] = int(i[j])
     print(add_matrix(matrix_one,matrix_two,actual_dimension_one,actual_dimension_two))
     print(mult_matrix(matrix_one,matrix_two,actual_dimension_one,actual_dimension_two))
