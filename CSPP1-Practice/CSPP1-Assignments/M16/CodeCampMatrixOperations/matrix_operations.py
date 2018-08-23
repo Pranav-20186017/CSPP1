@@ -15,7 +15,8 @@ def mult_matrix(x_value, y_value, actual_dimension_one, actual_dimension_two):
         error message should be "Error: Matrix shapes invalid for mult"
     '''
     if actual_dimension_one[1] == actual_dimension_two[0]:
-        result = [[sum(a*b for a, b in zip(x_value_row, y_value_col)) for y_value_col in zip(*y_value)] for x_value_row in x_value]
+        result = [[sum(a*b for a, b in zip(x_value_row, y_value_col)) for y_value_col in zip(*y_value)] \
+        for x_value_row in x_value]
         return result
     print("Error: Matrix shapes invalid for mult")
     return None
