@@ -41,8 +41,11 @@ def main():
     for i in dimension_mat_one:
         actual_dimension_one.append(int(i))
     print(actual_dimension_one)
+    matrix_one = []
+    for i in range(0,actual_dimension_one[0])
     mat_one = input().split(" ")
-    print(mat_one)
+    matrix_one.append(mat_one)
+    print(matrix_one)
 
 if __name__ == '__main__':
     main()
