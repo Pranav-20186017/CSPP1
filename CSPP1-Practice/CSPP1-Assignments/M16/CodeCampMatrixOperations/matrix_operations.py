@@ -46,17 +46,19 @@ def main():
     for i in range(0,dimension_one):
         mat_one = (input().split(" "))
         matrix_one.append(mat_one) 
-    dimension_mat_two = input().split(",")
-    actual_dimension_two = []
-    for i in dimension_mat_two:
-        actual_dimension_two.append(int(i))
-    print(actual_dimension_two)
-    if actual_dimension_one[1] == actual_dimension_two[0]:
-        read_matrix()
-    else:
-        print("Error: Matrix shapes invalid for mult")
-        print("None")
-        exit()
+    matrix_one = list(map(int, matrix_one))
+    print(matrix_one)
+    # dimension_mat_two = input().split(",")
+    # actual_dimension_two = []
+    # for i in dimension_mat_two:
+    #     actual_dimension_two.append(int(i))
+    # print(actual_dimension_two)
+    # if actual_dimension_one[1] == actual_dimension_two[0]:
+    #     read_matrix()
+    # else:
+    #     print("Error: Matrix shapes invalid for mult")
+    #     print("None")
+    #     exit()
 
 
 if __name__ == '__main__':
