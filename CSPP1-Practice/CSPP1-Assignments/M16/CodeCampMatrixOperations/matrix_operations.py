@@ -28,7 +28,8 @@ def add_matrix(X, Y, actual_dimension_one, actual_dimension_two):
         error message should be "Error: Matrix shapes invalid for addition"
     '''
     try:
-        if actual_dimension_one[0] == actual_dimension_two[0] and actual_dimension_one[1] == actual_dimension_two[1]:
+        if actual_dimension_one[0] == actual_dimension_two[0] and \
+        actual_dimension_one[1] == actual_dimension_two[1]:
             result = [[X[i][j] + Y[i][j]  for j in range(len(X[0]))] for i in range(len(X))]
             return result
     except IndexError:
