@@ -1,4 +1,12 @@
-def mult_matrix(X, Y,actual_dimension_one,actual_dimension_two):
+'''
+*********************************************
+Author: Pranav Surampudi
+Date: 23 August 2018
+Encdoing: Utf-8
+**********************************************
+
+'''
+def mult_matrix(X, Y, actual_dimension_one, actual_dimension_two):
     '''
         check if the matrix1 columns = matrix2 rows
         mult the matrices and return the result matrix
@@ -38,6 +46,7 @@ def main():
     # add matrix 1 and matrix 2
 
     # multiply matrix 1 and matrix 2
+    '''main method'''
     dimension_mat_one = input().split(',')
     actual_dimension_one = []
     for i in dimension_mat_one:
