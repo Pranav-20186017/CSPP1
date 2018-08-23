@@ -68,7 +68,7 @@ def main():
     for i in matrix_two:
         for j in range(0,len(i)):
             i[j] = int(i[j])
-    print(add_matrix(matrix_one,matrix_two))
+    print(add_matrix(matrix_one,matrix_two,actual_dimension_one,actual_dimension_two))
 
 
 
