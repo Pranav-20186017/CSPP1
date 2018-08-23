@@ -38,7 +38,7 @@ def main():
     # multiply matrix 1 and matrix 2
     dimension_mat_one = input().split(',')
     actual_dimension_one = []
-    for i in dimension_mat:
+    for i in dimension_mat_one:
         actual_dimension_one.append(int(i))
     print(actual_dimension_one)
 
