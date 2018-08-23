@@ -1,4 +1,4 @@
-def mult_matrix(m1, m2):
+def mult_matrix(X, Y,actual_dimension_one,actual_dimension_two):
     '''
         check if the matrix1 columns = matrix2 rows
         mult the matrices and return the result matrix
@@ -6,7 +6,13 @@ def mult_matrix(m1, m2):
         and return None
         error message should be "Error: Matrix shapes invalid for mult"
     '''
-    pass
+    if (actual_dimension_one[1] == actual_dimension_two[0]):
+    	print("code mul")
+    else:
+    	print("Error: Matrix shapes invalid for mult")
+    	return None
+
+    
 
 def add_matrix(X, Y,actual_dimension_one, actual_dimension_two):
     '''
@@ -72,8 +78,6 @@ def main():
         for j in range(0,len(i)):
             i[j] = int(i[j])
     print(add_matrix(matrix_one,matrix_two,actual_dimension_one,actual_dimension_two))
-
-
-
+    print(mult_matrix(matrix_one,matrix_two,actual_dimension_one,actual_dimension_two))
 if __name__ == '__main__':
     main()
