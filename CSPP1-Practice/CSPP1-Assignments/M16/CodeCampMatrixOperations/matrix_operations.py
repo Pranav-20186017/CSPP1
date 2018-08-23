@@ -41,7 +41,8 @@ def main():
     for i in dimension_mat_one:
         actual_dimension_one.append(int(i))
     print(actual_dimension_one)
-
+    mat_one = input().split(" ")
+    print(mat_one)
 
 if __name__ == '__main__':
     main()
