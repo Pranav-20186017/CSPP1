@@ -65,12 +65,13 @@ def main():
     # print(actual_dimension_two)
     dimension_two = actual_dimension_two[0]
     matrix_two = []
-    for i in range(0,dimension_two):
+    for i in range(0, dimension_two):
         mat_two = (input().split(" "))
         matrix_two.append(mat_two)
     # print(matrix_two)
     for i in matrix_one:
-        for j in range(0, len(i)):
+        length = len(i)
+        for j in range(0, length):
             i[j] = int(i[j])
     for i in matrix_two:
         for j in range(0, len(i)):
