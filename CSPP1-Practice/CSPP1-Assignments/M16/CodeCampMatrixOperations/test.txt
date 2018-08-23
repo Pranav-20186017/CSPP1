@@ -1,0 +1,120 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+[[1, 1, 2], [3, 5, 5], [6, 7, 9]]
+[[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+
+Your Output: 
+[3, 3]
+[['0', '1', '2'], ['3', '4', '5'], ['6', '7', '8']]
+[3, 3]
+[['1', '0', '0'], ['0', '1', '0'], ['0', '0', '1']]
+
+----------------------------------------
+########## Testcase 1: Failed ##########
+Expected Output: 
+[[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+[[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+Your Output: 
+[3, 3]
+[['0', '1', '2'], ['3', '4', '5'], ['6', '7', '8']]
+[3, 3]
+[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]
+
+----------------------------------------
+########## Testcase 2: Failed ##########
+Expected Output: 
+[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+[[9, 12, 15], [9, 12, 15], [9, 12, 15]]
+
+Your Output: 
+[3, 3]
+[['1', '1', '1'], ['1', '1', '1'], ['1', '1', '1']]
+[3, 3]
+[['0', '1', '2'], ['3', '4', '5'], ['6', '7', '8']]
+
+----------------------------------------
+########## Testcase 3: Failed ##########
+Expected Output: 
+[[3, 13, 4, 14], [9, 19, 9, 22], [15, 25, 14, 30], [10, 20, 4, 64]]
+[[30, 171, 34, 274], [90, 426, 88, 604], [150, 681, 142, 934], [60, 606, 96, 1044]]
+
+Your Output: 
+[4, 4]
+[['0', '1', '2', '6'], ['3', '4', '5', '12'], ['6', '7', '8', '18'], ['9', '0', '1', '24']]
+[4, 4]
+[['3', '12', '2', '8'], ['6', '15', '4', '10'], ['9', '18', '6', '12'], ['1', '20', '3', '40']]
+
+----------------------------------------
+########## Testcase 4: Failed ##########
+Expected Output: 
+Error: Invalid input for the matrix
+
+Your Output: 
+[4, 4]
+[['0', '1', '2', '6'], ['3', '4', '5', '12'], ['6', '7', '8', '18'], ['9', '0', '1', '24']]
+[4, 4]
+[['3', '12', '2', '8'], ['6', '15', '4', '10'], ['9', '18', '6'], ['1', '20', '3', '40']]
+
+----------------------------------------
+########## Testcase 5: Failed ##########
+Expected Output: 
+Error: Matrix shapes invalid for addition
+None
+[[30, 171], [90, 426]]
+
+Your Output: 
+[2, 4]
+[['0', '1', '2', '6'], ['3', '4', '5', '12']]
+[4, 2]
+[['3', '12'], ['6', '15'], ['9', '18'], ['1', '20']]
+
+----------------------------------------
+########## Testcase 6: Failed ##########
+Expected Output: 
+[[3, 7, 11, 7], [15, 19, 24, 32]]
+Error: Matrix shapes invalid for mult
+None
+
+Your Output: 
+[2, 4]
+[['0', '1', '2', '6'], ['3', '4', '5', '12']]
+[2, 4]
+[['3', '6', '9', '1'], ['12', '15', '19', '20']]
+
+----------------------------------------
+('19a03493af6a45db2d77bd2b83d4f952', '19a03493af6a45db2d77bd2b83d4f952', '53cc04ea9b20edfe466bd37c4520907e', 'bf098d9738c5daa77587018a966e0c58')
+########## Testcase 7: Failed ##########
+Something is wrong with the testcase.
+
+----------------------------------------
+Result: 0/8 testcases passed.
+************* Module matrix_operations
+matrix_operations.py:46:20: C0326: Exactly one space required after comma
+    for i in range(0,dimension_one):
+                    ^ (bad-whitespace)
+matrix_operations.py:57:20: C0326: Exactly one space required after comma
+    for i in range(0,dimension_two):
+                    ^ (bad-whitespace)
+matrix_operations.py:1:0: C0111: Missing module docstring (missing-docstring)
+matrix_operations.py:1:0: C0103: Argument name "m1" doesn't conform to snake_case naming style (invalid-name)
+matrix_operations.py:1:0: C0103: Argument name "m2" doesn't conform to snake_case naming style (invalid-name)
+matrix_operations.py:1:16: W0613: Unused argument 'm1' (unused-argument)
+matrix_operations.py:1:20: W0613: Unused argument 'm2' (unused-argument)
+matrix_operations.py:11:0: C0103: Argument name "m1" doesn't conform to snake_case naming style (invalid-name)
+matrix_operations.py:11:0: C0103: Argument name "m2" doesn't conform to snake_case naming style (invalid-name)
+matrix_operations.py:11:15: W0613: Unused argument 'm1' (unused-argument)
+matrix_operations.py:11:19: W0613: Unused argument 'm2' (unused-argument)
+matrix_operations.py:31:0: C0111: Missing function docstring (missing-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 6.13/10 (previous run: 5.20/10, +0.93)
+
+
+[u'6.13']
+
+[master 6125840] " -> 0 of 8 passed. pylint: 6.13/10 "
+ 3 files changed, 9 insertions(+), 3 deletions(-)
+
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+

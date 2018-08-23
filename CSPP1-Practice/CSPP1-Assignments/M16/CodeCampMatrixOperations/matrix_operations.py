@@ -40,23 +40,25 @@ def main():
     actual_dimension_one = []
     for i in dimension_mat_one:
         actual_dimension_one.append(int(i))
-    print(actual_dimension_one)
+    # print(actual_dimension_one)
     matrix_one = []
     dimension_one = actual_dimension_one[0]
     for i in range(0,dimension_one):
         mat_one = (input().split(" "))
         matrix_one.append(mat_one)
-    print(matrix_one)
+    # print(matrix_one)
     dimension_mat_two = input().split(",")
     actual_dimension_two = []
     for i in dimension_mat_two:
         actual_dimension_two.append(int(i))
-    print(actual_dimension_two)
+    # print(actual_dimension_two)
     dimension_two = actual_dimension_two[0]
     matrix_two = []
     for i in range(0,dimension_two):
         mat_two = (input().split(" "))
         matrix_two.append(mat_two)
+    # print(matrix_two)
+    print(matrix_one)
     print(matrix_two)
 
 
