@@ -1,0 +1,164 @@
+########## Testcase 0: Passed ##########
+Expected Output: 
+[[1, 1, 2], [3, 5, 5], [6, 7, 9]]
+[[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+
+Your Output: 
+[[1, 1, 2], [3, 5, 5], [6, 7, 9]]
+[[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+
+----------------------------------------
+########## Testcase 1: Passed ##########
+Expected Output: 
+[[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+[[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+Your Output: 
+[[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+[[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+----------------------------------------
+########## Testcase 2: Passed ##########
+Expected Output: 
+[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+[[9, 12, 15], [9, 12, 15], [9, 12, 15]]
+
+Your Output: 
+[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+[[9, 12, 15], [9, 12, 15], [9, 12, 15]]
+
+----------------------------------------
+########## Testcase 3: Passed ##########
+Expected Output: 
+[[3, 13, 4, 14], [9, 19, 9, 22], [15, 25, 14, 30], [10, 20, 4, 64]]
+[[30, 171, 34, 274], [90, 426, 88, 604], [150, 681, 142, 934], [60, 606, 96, 1044]]
+
+Your Output: 
+[[3, 13, 4, 14], [9, 19, 9, 22], [15, 25, 14, 30], [10, 20, 4, 64]]
+[[30, 171, 34, 274], [90, 426, 88, 604], [150, 681, 142, 934], [60, 606, 96, 1044]]
+
+----------------------------------------
+########## Testcase 4: Passed ##########
+Expected Output: 
+Error: Invalid input for the matrix
+
+Your Output: 
+Error: Invalid input for the matrix
+
+----------------------------------------
+########## Testcase 5: Passed ##########
+Expected Output: 
+Error: Matrix shapes invalid for addition
+None
+[[30, 171], [90, 426]]
+
+Your Output: 
+Error: Matrix shapes invalid for addition
+None
+[[30, 171], [90, 426]]
+
+----------------------------------------
+########## Testcase 6: Passed ##########
+Expected Output: 
+[[3, 7, 11, 7], [15, 19, 24, 32]]
+Error: Matrix shapes invalid for mult
+None
+
+Your Output: 
+[[3, 7, 11, 7], [15, 19, 24, 32]]
+Error: Matrix shapes invalid for mult
+None
+
+----------------------------------------
+########## Testcase 7: Passed ##########
+Expected Output: 
+[[-3, 11, 4, 14], [9, 19, -9, 22], [15, -11, 14, 30], [10, 20, -2, 16]]
+[[18, 69, -2, 254], [-18, 426, -76, 484], [114, 393, -22, 934], [-42, -390, 96, -876]]
+
+Your Output: 
+[[-3, 11, 4, 14], [9, 19, -9, 22], [15, -11, 14, 30], [10, 20, -2, 16]]
+[[18, 69, -2, 254], [-18, 426, -76, 484], [114, 393, -22, 934], [-42, -390, 96, -876]]
+
+----------------------------------------
+Result: 8/8 testcases passed.
+************* Module matrix_operations
+matrix_operations.py:1:20: C0326: Exactly one space required after comma
+def mult_matrix(X, Y,actual_dimension_one,actual_dimension_two):
+                    ^ (bad-whitespace)
+matrix_operations.py:1:41: C0326: Exactly one space required after comma
+def mult_matrix(X, Y,actual_dimension_one,actual_dimension_two):
+                                         ^ (bad-whitespace)
+matrix_operations.py:9:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
+matrix_operations.py:10:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+matrix_operations.py:10:29: C0326: Exactly one space required after comma
+    	result = [[sum(a*b for a,b in zip(X_row,Y_col)) for Y_col in zip(*Y)] for X_row in X]
+                             ^ (bad-whitespace)
+matrix_operations.py:10:44: C0326: Exactly one space required after comma
+    	result = [[sum(a*b for a,b in zip(X_row,Y_col)) for Y_col in zip(*Y)] for X_row in X]
+                                            ^ (bad-whitespace)
+matrix_operations.py:11:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+matrix_operations.py:13:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+matrix_operations.py:14:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+matrix_operations.py:16:0: C0303: Trailing whitespace (trailing-whitespace)
+matrix_operations.py:18:19: C0326: Exactly one space required after comma
+def add_matrix(X, Y,actual_dimension_one, actual_dimension_two):
+                   ^ (bad-whitespace)
+matrix_operations.py:27:0: C0301: Line too long (114/100) (line-too-long)
+matrix_operations.py:27:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+matrix_operations.py:28:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+matrix_operations.py:29:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+matrix_operations.py:31:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+matrix_operations.py:32:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+matrix_operations.py:34:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+matrix_operations.py:35:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+matrix_operations.py:61:20: C0326: Exactly one space required after comma
+    for i in range(0,dimension_one):
+                    ^ (bad-whitespace)
+matrix_operations.py:72:20: C0326: Exactly one space required after comma
+    for i in range(0,dimension_two):
+                    ^ (bad-whitespace)
+matrix_operations.py:77:24: C0326: Exactly one space required after comma
+        for j in range(0,len(i)):
+                        ^ (bad-whitespace)
+matrix_operations.py:80:24: C0326: Exactly one space required after comma
+        for j in range(0,len(i)):
+                        ^ (bad-whitespace)
+matrix_operations.py:82:31: C0326: Exactly one space required after comma
+    print(add_matrix(matrix_one,matrix_two,actual_dimension_one,actual_dimension_two))
+                               ^ (bad-whitespace)
+matrix_operations.py:82:42: C0326: Exactly one space required after comma
+    print(add_matrix(matrix_one,matrix_two,actual_dimension_one,actual_dimension_two))
+                                          ^ (bad-whitespace)
+matrix_operations.py:82:63: C0326: Exactly one space required after comma
+    print(add_matrix(matrix_one,matrix_two,actual_dimension_one,actual_dimension_two))
+                                                               ^ (bad-whitespace)
+matrix_operations.py:83:32: C0326: Exactly one space required after comma
+    print(mult_matrix(matrix_one,matrix_two,actual_dimension_one,actual_dimension_two))
+                                ^ (bad-whitespace)
+matrix_operations.py:83:43: C0326: Exactly one space required after comma
+    print(mult_matrix(matrix_one,matrix_two,actual_dimension_one,actual_dimension_two))
+                                           ^ (bad-whitespace)
+matrix_operations.py:83:64: C0326: Exactly one space required after comma
+    print(mult_matrix(matrix_one,matrix_two,actual_dimension_one,actual_dimension_two))
+                                                                ^ (bad-whitespace)
+matrix_operations.py:1:0: C0111: Missing module docstring (missing-docstring)
+matrix_operations.py:1:0: C0103: Argument name "X" doesn't conform to snake_case naming style (invalid-name)
+matrix_operations.py:1:0: C0103: Argument name "Y" doesn't conform to snake_case naming style (invalid-name)
+matrix_operations.py:9:4: R1705: Unnecessary "else" after "return" (no-else-return)
+matrix_operations.py:18:0: C0103: Argument name "X" doesn't conform to snake_case naming style (invalid-name)
+matrix_operations.py:18:0: C0103: Argument name "Y" doesn't conform to snake_case naming style (invalid-name)
+matrix_operations.py:46:0: C0111: Missing function docstring (missing-docstring)
+matrix_operations.py:77:8: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+matrix_operations.py:80:8: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
+
+------------------------------------------------------------------
+Your code has been rated at 1.91/10 (previous run: 1.74/10, +0.18)
+
+
+[u'1.91']
+
+[master fad19c9] " -> 8 of 8 passed. pylint: 1.91/10 "
+ 3 files changed, 4 insertions(+), 3 deletions(-)
+
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+

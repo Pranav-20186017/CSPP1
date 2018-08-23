@@ -12,9 +12,6 @@ def mult_matrix(X, Y,actual_dimension_one,actual_dimension_two):
     else:
     	print("Error: Matrix shapes invalid for mult")
     	return None
-
-    
-
 def add_matrix(X, Y,actual_dimension_one, actual_dimension_two):
     '''
         check if the matrix shapes are similar
@@ -33,16 +30,6 @@ def add_matrix(X, Y,actual_dimension_one, actual_dimension_two):
     else:
     	print("Error: Matrix shapes invalid for addition")
     	return None
-def read_matrix():
-    '''
-        read the matrix dimensions from input
-        create a list of lists and read the numbers into it
-        in case there are not enough numbers given in the input
-        print an error message and return None
-        error message should be "Error: Invalid input for the matrix"
-    '''
-    print("inside read matrix")
-
 def main():
     # read matrix 1
 
