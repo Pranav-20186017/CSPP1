@@ -58,8 +58,15 @@ def main():
         mat_two = (input().split(" "))
         matrix_two.append(mat_two)
     # print(matrix_two)
+    for i in matrix_one:
+        for j in range(0,len(i)):
+            i[j] = int(i[j])
+    for i in matrix_two:
+        for j in range(0,len(i)):
+            i[j] = int(i[j])
     print(matrix_one)
     print(matrix_two)
+
 
 
 if __name__ == '__main__':
