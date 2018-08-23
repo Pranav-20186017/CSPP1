@@ -54,7 +54,7 @@ def main():
     # print(actual_dimension_one)
     matrix_one = []
     dimension_one = actual_dimension_one[0]
-    for i in range(0,dimension_one):
+    for i in range(0, dimension_one):
         mat_one = (input().split(" "))
         matrix_one.append(mat_one)
     # print(matrix_one)
@@ -70,10 +70,10 @@ def main():
         matrix_two.append(mat_two)
     # print(matrix_two)
     for i in matrix_one:
-        for j in range(0,len(i)):
+        for j in range(0, len(i)):
             i[j] = int(i[j])
     for i in matrix_two:
-        for j in range(0,len(i)):
+        for j in range(0, len(i)):
             i[j] = int(i[j])
     print(add_matrix(matrix_one,matrix_two,actual_dimension_one,actual_dimension_two))
     print(mult_matrix(matrix_one,matrix_two,actual_dimension_one,actual_dimension_two))
