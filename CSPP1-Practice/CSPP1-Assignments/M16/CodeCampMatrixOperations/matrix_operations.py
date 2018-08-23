@@ -43,10 +43,10 @@ def main():
     print(actual_dimension_one)
     matrix_one = []
     dimension_one = actual_dimension_one[0]
-    for i in range(0,dimension_one)
-    mat_one = input().split(" ")
-    matrix_one.append(mat_one)
-    print(matrix_one)
+    for i in range(0,dimension_one):
+        mat_one = input().split(" ")
+        matrix_one.append(mat_one)
+        print(matrix_one)
 
 if __name__ == '__main__':
     main()
