@@ -45,8 +45,7 @@ def main():
     dimension_one = actual_dimension_one[0]
     for i in range(0,dimension_one):
         mat_one = (input().split(" "))
-        matrix_one.append(mat_one) 
-    matrix_one = list(map(int, matrix_one))
+        matrix_one.append(mat_one)
     print(matrix_one)
     # dimension_mat_two = input().split(",")
     # actual_dimension_two = []
