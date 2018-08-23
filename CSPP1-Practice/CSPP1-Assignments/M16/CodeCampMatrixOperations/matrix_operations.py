@@ -8,7 +8,7 @@ def mult_matrix(m1, m2):
     '''
     pass
 
-def add_matrix(m1, m2):
+def add_matrix(X, Y,actual_dimension_one, actual_dimension_two):
     '''
         check if the matrix shapes are similar
         add the matrices and return the result matrix
@@ -16,8 +16,12 @@ def add_matrix(m1, m2):
         and return None
         error message should be "Error: Matrix shapes invalid for addition"
     '''
-    pass
-
+    if actual_dimension_one[0] == actual_dimension_two[0] and actual_dimension_one[1] == actual_dimension_two[1]:
+    	result = [[X[i][j] + Y[i][j]  for j in range(len(X[0]))] for i in range(len(X))]
+    	return result
+    else:
+    	print("Error: Matrix shapes invalid for addition")
+    	return None
 def read_matrix():
     '''
         read the matrix dimensions from input
@@ -64,8 +68,7 @@ def main():
     for i in matrix_two:
         for j in range(0,len(i)):
             i[j] = int(i[j])
-    print(matrix_one)
-    print(matrix_two)
+    print(add_matrix(matrix_one,matrix_two))
 
 
 
