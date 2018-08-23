@@ -30,7 +30,8 @@ def add_matrix(x_value, y_value, actual_dimension_one, actual_dimension_two):
     try:
         if actual_dimension_one[0] == actual_dimension_two[0] and \
         actual_dimension_one[1] == actual_dimension_two[1]:
-            result = [[x_value[i][j] + y_value[i][j]  for j in range(len(x_value[0]))] for i in range(len(x_value))]
+            result = [[x_value[i][j] + y_value[i][j]  \
+            for j in range(len(x_value[0]))] for i in range(len(x_value))]
             return result
     except IndexError:
         print("Error: Invalid input for the matrix")
