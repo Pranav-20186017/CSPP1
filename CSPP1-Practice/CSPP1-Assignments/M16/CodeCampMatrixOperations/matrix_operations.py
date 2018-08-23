@@ -16,9 +16,12 @@ def add_matrix(X, Y,actual_dimension_one, actual_dimension_two):
         and return None
         error message should be "Error: Matrix shapes invalid for addition"
     '''
-    if actual_dimension_one[0] == actual_dimension_two[0] and actual_dimension_one[1] == actual_dimension_two[1]:
-    	result = [[X[i][j] + Y[i][j]  for j in range(len(X[0]))] for i in range(len(X))]
-    	return result
+    try:
+    	if actual_dimension_one[0] == actual_dimension_two[0] and actual_dimension_one[1] == actual_dimension_two[1]:
+    		result = [[X[i][j] + Y[i][j]  for j in range(len(X[0]))] for i in range(len(X))]
+    		return result
+    except IndexError:
+    	return "Error: Invalid input for the matrix"
     else:
     	print("Error: Matrix shapes invalid for addition")
     	return None
