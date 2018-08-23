@@ -52,7 +52,13 @@ def main():
     for i in dimension_mat_two:
         actual_dimension_two.append(int(i))
     print(actual_dimension_two)
-    
+    dimension_two = actual_dimension_two[0]
+    matrix_two = []
+    for i in range(0,dimension_two):
+        mat_two = (input().split(" "))
+        matrix_two.append(mat_two)
+    print(matrix_two)
+
 
 if __name__ == '__main__':
     main()
