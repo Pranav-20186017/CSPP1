@@ -16,10 +16,10 @@ def isvalidinput(board):
         sum_val += i.count('o') + i.count('x') + i.count(".")
     if sum_val != 9:
         print("invalid input")
-        return
+        return None
     if x_sum - o_sum not in (0, 1, -1):
         print("invalid game")
-        return
+        return None
     return True
 def checkgame(board):
     '''evaluate the game'''
