@@ -39,6 +39,7 @@ def checkgame(board):
         print("invalid game")
     else:
         return True
+    return None
 def checkhorizantal(board):
     '''check horizontal rows'''
     length = len(board)
