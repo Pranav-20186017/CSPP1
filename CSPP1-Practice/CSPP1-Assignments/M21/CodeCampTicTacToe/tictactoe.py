@@ -5,7 +5,7 @@ def isvalidinput(board):
 	for i in board:
 		x_sum += i.count('x')
 		o_sum += i.count('o')
-		sum	+= x_sum + o_sum + i.count(".")	
+		sum	+= i.count('o') + i.count('x') + i.count(".")	
 	if(x_sum - o_sum not in (0, 1, -1)):
 		print("invalid game")
 		return
