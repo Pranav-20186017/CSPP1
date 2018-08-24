@@ -2,16 +2,14 @@ def isvalidinput(board):
 	x_sum = 0
 	o_sum = 0
 	sum = 0
-	dot_sum =0
 	for i in board:
 		x_sum += i.count('x')
 		o_sum += i.count('o')
-		dot_sum += i.count('.')
 		sum	+= i.count('o') + i.count('x') + i.count(".")
 	if sum != 9:
 		print("invalid input")
 		return	
-	if(x_sum - o_sum not in (0, 1, -1) or ((x_sum==dot_sum) and (o_sum==dot_sum))):
+	if(x_sum - o_sum not in (0, 1, -1) or ):
 		print("invalid game")
 		return
 	return True
@@ -36,16 +34,21 @@ def checkdiagonal(board):
 
 def checkwinner(board):
 	winner =  checkhorizantal(board)
+	winner1 = checkvertical(board)
+	winner2 = checkdiagonal(board)
+
+	if (winner and winner1) or (winner1 and winner2) or (winner and winner2):
+		return ("invalid game")
+		
 	if winner:
 		return winner
-	winner = checkvertical(board)
-	if winner:
-		return winner
-	winner = checkdiagonal(board)
-	if winner:
-		return winner
+	if winner1:
+		return winner1
+	if winner2:
+		return winner2
 	else:
 		return "draw"
+	
 
 def main():
 	board = []
