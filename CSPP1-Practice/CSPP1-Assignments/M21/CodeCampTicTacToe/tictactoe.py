@@ -51,6 +51,7 @@ def checkvertical(board):
     for i in range(len(board)):
         if board[0][i] == board[1][i] and board[1][i] == board[2][i]:
             return board[0][i]
+    return None
 def checkdiagonal(board):
     '''check diagonals'''
     if board[0][0] == board[1][1] and board[1][1] == board[2][2]:
