@@ -20,10 +20,10 @@ def checkwinner(board):
 	if winner:
 		return winner
 	winner = checkvertical(board)
-	elif winner:
+	if winner:
 		return winner
 	winner = checkdiagonal(board)
-	elif winner:
+	if winner:
 		return winner
 	else:
 		return "draw"
