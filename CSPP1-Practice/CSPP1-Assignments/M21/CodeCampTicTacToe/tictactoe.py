@@ -67,8 +67,7 @@ def checkwinner(board):
         return winner1
     if winner2:
         return winner2
-    else:
-        return "draw"
+    return "draw"
 def main():
     '''main method'''
     board = []
