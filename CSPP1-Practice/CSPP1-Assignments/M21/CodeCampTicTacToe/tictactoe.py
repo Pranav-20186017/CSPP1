@@ -72,8 +72,10 @@ def checkwinner(board):
 def main():
     '''main method'''
     board = []
-    for i in range(3):
+    i = 0
+    while i<3:
         board.append(input().split())
+        i += 1
     if isvalidinput(board) and checkgame(board):
         print(checkwinner(board))
 main()
