@@ -1,3 +1,12 @@
+def isvalidinput(board):
+	sum = 0
+	for i in board:
+		sum	+= i.count("x") + i.count("o") + i.count(".")	
+	if sum == 9:
+		return True
+	else:
+		print "invalid input"
+
 def checkhorizantal(board):
 	for i in range(len(board)):
 		if board[i][0] == board[i][1] and board[i][1] == board[i][2]:
@@ -32,6 +41,7 @@ def main():
 	board = []
 	for i in range(3):
 		board.append(input().split())
-	print(checkwinner(board))
+	if isvalidinput(board):
+		print(checkwinner(board))
 
 main()
