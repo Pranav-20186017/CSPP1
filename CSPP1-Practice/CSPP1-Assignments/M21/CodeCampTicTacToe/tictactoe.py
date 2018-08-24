@@ -28,7 +28,8 @@ def checkgame(board):
 		count += 1
 	if count > 1:
 		print("invalid game")
-		return 
+	else:
+		return True
 
 def checkhorizantal(board):
 	for i in range(len(board)):
