@@ -72,7 +72,7 @@ def main():
     '''main method'''
     board = []
     i = 0
-    while i<3:
+    while i < 3:
         board.append(input().split())
         i += 1
     if isvalidinput(board) and checkgame(board):
