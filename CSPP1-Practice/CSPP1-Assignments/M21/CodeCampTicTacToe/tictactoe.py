@@ -54,7 +54,7 @@ def checkdiagonal(board):
     '''check diagonals'''
     if board[0][0] == board[1][1] and board[1][1] == board[2][2]:
         return board[0][0]
-    if board[0][2] == board[1][1] and board[1][1] == board[2][0]:
+    elif board[0][2] == board[1][1] and board[1][1] == board[2][0]:
         return board[0][2]
 def checkwinner(board):
     '''compute the winner'''
