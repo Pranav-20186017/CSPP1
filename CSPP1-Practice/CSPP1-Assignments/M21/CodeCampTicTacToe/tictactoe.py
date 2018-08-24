@@ -9,7 +9,7 @@ def isvalidinput(board):
 	if sum != 9:
 		print("invalid input")
 		return	
-	if(x_sum - o_sum not in (0, 1, -1)):
+	if(x_sum - o_sum not in (0, 1, -1) ):
 		print("invalid game")
 		return
 	return True
