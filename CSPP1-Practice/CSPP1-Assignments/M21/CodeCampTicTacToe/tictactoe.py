@@ -46,6 +46,7 @@ def checkhorizantal(board):
     for i in range(length):
         if board[i][0] == board[i][1] and board[i][1] == board[i][2]:
             return board[i][0]
+    return None
 def checkvertical(board):
     '''check vertical rows'''
     for i in range(len(board)):
@@ -58,6 +59,7 @@ def checkdiagonal(board):
         return board[0][0]
     if board[0][2] == board[1][1] and board[1][1] == board[2][0]:
         return board[0][2]
+    return None
 def checkwinner(board):
     '''compute the winner'''
     winner = checkhorizantal(board)
