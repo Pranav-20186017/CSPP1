@@ -24,7 +24,8 @@ def isvalidinput(board):
 def checkgame(board):
     '''evaluate the game'''
     count = 0
-    for i in range(len(board)):
+    length = len(board)
+    for i in range(length):
         if board[i][0] == board[i][1] and board[i][1] == board[i][2]:
             count += 1
     for i in range(len(board)):
