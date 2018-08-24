@@ -5,7 +5,7 @@ def isvalidinput(board):
 	if sum == 9:
 		return True
 	else:
-		print "invalid input"
+		print("invalid input")
 
 def checkhorizantal(board):
 	for i in range(len(board)):
