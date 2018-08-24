@@ -19,8 +19,9 @@ def isvalidinput(board):
 		return	
 	if(x_sum - o_sum not in (0, 1, -1) ):
 		print("invalid game")
-		exit()
+		return
 	return True
+
 def checkgame(board):
 	'''evaluate the game'''
 	count = 0
@@ -36,7 +37,8 @@ def checkgame(board):
 		count += 1
 	if count > 1:
 		print("invalid game")
-	return True
+	else:
+		return True
 def checkhorizantal(board):
 	'''check horizontal rows'''
 	for i in range(len(board)):
