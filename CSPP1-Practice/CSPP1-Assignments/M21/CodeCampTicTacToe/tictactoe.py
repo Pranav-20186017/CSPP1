@@ -56,7 +56,7 @@ def checkdiagonal(board):
         return board[0][2]
 def checkwinner(board):
     '''compute the winner'''
-    winner =  checkhorizantal(board)
+    winner = checkhorizantal(board)
     winner1 = checkvertical(board)
     winner2 = checkdiagonal(board)
 
