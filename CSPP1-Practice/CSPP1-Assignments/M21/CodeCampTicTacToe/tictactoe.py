@@ -41,7 +41,8 @@ def checkgame(board):
         return True
 def checkhorizantal(board):
     '''check horizontal rows'''
-    for i in range(len(board)):
+    length = len(board)
+    for i in range(length):
         if board[i][0] == board[i][1] and board[i][1] == board[i][2]:
             return board[i][0]
 def checkvertical(board):
