@@ -31,7 +31,7 @@ def checkgame(board):
         if board[0][i] == board[1][i] and board[1][i] == board[2][i]:
             count += 1
     if board[0][0] == board[1][1] and board[1][1] == board[2][2]:
-        count+= 1
+        count += 1
     if board[0][2] == board[1][1] and board[1][1] == board[2][0]:
         count += 1
     if count > 1:
