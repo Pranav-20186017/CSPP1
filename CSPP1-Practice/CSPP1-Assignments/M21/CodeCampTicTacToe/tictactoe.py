@@ -61,7 +61,10 @@ def checkwinner(board):
     winner = checkhorizantal(board)
     winner1 = checkvertical(board)
     winner2 = checkdiagonal(board)
-    if (winner and winner1) or (winner1 and winner2) or (winner and winner2):
+    exp_one = winner and winner1
+    exp_two = winner1 and winner2
+    exp_three = winner and winner2
+    if (exp_one) or (exp_two) or (exp_three):
         return "invalid game"
     if winner:
         return winner
