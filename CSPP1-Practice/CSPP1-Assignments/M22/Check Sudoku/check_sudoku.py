@@ -16,7 +16,6 @@ def check_sudoku(sudoku):
     grid = np.array(sudoku)
     for i in range(9):
         if len(set(grid[i, :])) != 9 or len(set(grid[:, i])) != 9:
-            i += 1 #dummy code for pylint
             return False
     return True
 def main():
@@ -29,6 +28,7 @@ def main():
     for i in range(9):
         # read a line, split it on SPACE and append row to list
         row = input().split(' ')
+        i += 1 #code has no effect
         sudoku.append(row)
     # call solution function and print result to console
     print(check_sudoku(sudoku))
