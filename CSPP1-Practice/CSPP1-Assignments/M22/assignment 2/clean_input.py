@@ -2,15 +2,19 @@
 Write a function to clean up a given string by removing the special characters and retain
 alphabets in both upper and lower case and numbers.
 '''
+import string
 def clean_string(string):
     '''clean the string'''
     final_ans = ""
+    small_letters = string.ascii_lowercase
+    cap_letters = string.ascii_uppercase
+    digits = string.digits
     for i in string:
-        if ord(i) >= 65 and ord(i) <= 90:
+        if i in small_letters:
             final_ans += i
-        if ord(i) >= 97 and ord(i) <= 122:
+        if i in cap_letters:
             final_ans += i
-        if ord(i) >= 48 and ord(i) <= 57:
+        if i in digits:
             final_ans += i
     return final_ans
 def main():
