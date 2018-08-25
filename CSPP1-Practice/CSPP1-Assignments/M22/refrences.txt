@@ -1,0 +1,7 @@
+https://en.wikipedia.org/wiki/Sudoku
+https://www.websudoku.com/?level=4
+https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.tolist.html
+https://docs.python.org/3/library/string.html
+https://stackoverflow.com/questions/4344017/how-can-i-get-the-concatenation-of-two-lists-in-python-without-modifying-either
+https://docs.scipy.org/doc/numpy-1.13.0/reference/arrays.indexing.html
+https://docs.scipy.org/doc/numpy/reference/generated/numpy.ravel.html
