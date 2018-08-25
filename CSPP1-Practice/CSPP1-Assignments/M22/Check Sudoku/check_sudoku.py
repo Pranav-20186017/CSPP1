@@ -20,16 +20,12 @@ def check_sudoku(sudoku):
                    or len(set(grid[j:j+3, k:k+3].ravel())) != 9:
             return False
     return True
-
 def main():
     '''
         main function to read input sudoku from console
         call check_sudoku function and print the result to console
     '''
-    
-    # initialize empty list
     sudoku = []
-
     # loop to read 9 lines of input from console
     for i in range(9):
         # read a line, split it on SPACE and append row to list
