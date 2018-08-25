@@ -21,9 +21,11 @@ def main():
     '''main function'''
     limit = int(input())
     i = 0
+    new_val = []
     while i < (limit):
-        temp = input().split(" ")
-        dic = tokenize(temp)
+        list_val = input().split(" ")
+        new_val += list_val
+        dic = tokenize(new_val)
         i += 1
     print(dic)
 if __name__ == '__main__':
