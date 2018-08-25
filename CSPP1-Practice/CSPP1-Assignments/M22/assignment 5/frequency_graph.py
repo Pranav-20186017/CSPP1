@@ -15,7 +15,8 @@ def frequency_graph(dictionary):
         temp = ""
         for j in range(i):
             temp += "#"
-        hash_new.append(temp) 
+            j += i #dummy code -- has no effect
+        hash_new.append(temp)
     length = len(keys_new)
     for i in range(length):
         print(str(keys_new[i]) + " " + "-" + " " + str(hash_new[i]))
