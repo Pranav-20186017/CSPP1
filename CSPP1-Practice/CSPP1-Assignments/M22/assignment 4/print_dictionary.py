@@ -17,6 +17,7 @@ def print_dictionary(dictionary):
 def main():
     '''main functin'''
     dictionary = input()
+    dictionary = dict(dictionary)
     print_dictionary(dictionary)
 if __name__ == '__main__':
     main()
