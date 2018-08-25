@@ -3,6 +3,7 @@ Write a function to tokenize a given string and return a dictionary with the fre
 each word
 '''
 def tokenize(temp):
+    '''generate tokens'''
     new_list = []
     for i in range(len(temp)):
         string = str(temp[i])
@@ -16,6 +17,7 @@ def tokenize(temp):
             dictionary[i] = 1
     return dictionary
 def main():
+    '''main function'''
     limit = int(input())
     for i in range(limit):
         temp = input().split(" ")
