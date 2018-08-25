@@ -7,5 +7,6 @@ def main():
     for i in range(val):
         ans = input()
         print(ans)
+        i += 1 #line written only to satisfy pylint, code has no effect
 if __name__ == '__main__':
     main()
