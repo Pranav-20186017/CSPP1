@@ -11,7 +11,8 @@ def print_dictionary(dictionary):
         new_dict[i] = dictionary[i]
     keys_new = list(new_dict.keys())
     vals_new = list(new_dict.values())
-    for i in range(len(keys_new)):
+    length = len(keys_new)
+    for i in range(length):
         print(str(keys_new[i]) + " " + "-" + " " + str(vals_new[i]))
 def main():
     '''main functin'''
