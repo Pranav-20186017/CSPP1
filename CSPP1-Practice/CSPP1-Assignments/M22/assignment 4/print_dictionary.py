@@ -3,8 +3,8 @@ Write a function to print a dictionary with the keys in sorted order along with 
 frequency of each word. Format of the printing should be one key per line and separate
 the key and frequency with a SPACE - SPACE.
 '''
-
 def print_dictionary(dictionary):
+    '''prints out a dictionary'''
     new_dict = dict()
     keys = sorted(list(dictionary.keys()))
     for i in keys:
@@ -14,8 +14,8 @@ def print_dictionary(dictionary):
     for i in range(len(keys_new)):
         print(str(keys_new[i]) + " " + "-" + " " + str(vals_new[i]))
 def main():
+    '''main functin'''
     dictionary = eval(input())
     print_dictionary(dictionary)
-
 if __name__ == '__main__':
     main()
