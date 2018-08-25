@@ -20,9 +20,11 @@ def tokenize(temp):
 def main():
     '''main function'''
     limit = int(input())
-    for i in range(limit):
+    i = 0
+    while i<(limit):
         temp = input().split(" ")
         dic = tokenize(temp)
+        i += 1
     print(dic)
 if __name__ == '__main__':
     main()
