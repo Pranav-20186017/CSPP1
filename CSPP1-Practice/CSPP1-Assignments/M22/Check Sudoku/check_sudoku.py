@@ -15,9 +15,6 @@ def check_sudoku(sudoku):
     '''
     grid = np.array(sudoku)
     for i in range(9):
-        # j, k = (i // 3) * 3, (i % 3) * 3
-        # k+=1
-        # j+=1
         if len(set(grid[i, :])) != 9 or len(set(grid[:, i])) != 9:
             return False
     return True
