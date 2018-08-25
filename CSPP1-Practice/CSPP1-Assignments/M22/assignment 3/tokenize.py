@@ -3,7 +3,7 @@ Write a function to tokenize a given string and return a dictionary with the fre
 each word
 '''
 def tokenize(temp,i):
-    if i == 1:
+    if i == 0:
         new_list=[]
         for i in range(len(temp)):
             string = str(temp[i])
