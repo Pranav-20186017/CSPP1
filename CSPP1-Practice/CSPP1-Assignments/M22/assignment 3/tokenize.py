@@ -21,7 +21,7 @@ def main():
     '''main function'''
     limit = int(input())
     i = 0
-    while i<(limit):
+    while i < (limit):
         temp = input().split(" ")
         dic = tokenize(temp)
         i += 1
