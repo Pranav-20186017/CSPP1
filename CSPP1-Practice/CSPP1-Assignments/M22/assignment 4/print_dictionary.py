@@ -16,8 +16,7 @@ def print_dictionary(dictionary):
         print(str(keys_new[i]) + " " + "-" + " " + str(vals_new[i]))
 def main():
     '''main functin'''
-    dictionary = input()
-    dictionary = dict(dictionary)
+    dictionary = eval(input()
     print_dictionary(dictionary)
 if __name__ == '__main__':
     main()
