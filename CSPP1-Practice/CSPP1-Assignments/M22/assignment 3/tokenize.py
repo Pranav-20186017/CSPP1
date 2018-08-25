@@ -8,7 +8,6 @@ def tokenize(temp):
         string = str(temp[i])
         string = string.strip('",.;')
         new_list.append(string)
-    print(new_list)
     dictionary = dict()
     for i in new_list:
         if i in dictionary.keys():
