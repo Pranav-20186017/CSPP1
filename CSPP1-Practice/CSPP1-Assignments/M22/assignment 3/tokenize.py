@@ -2,7 +2,7 @@
 Write a function to tokenize a given string and return a dictionary with the frequency of
 each word
 '''
-def tokenize(temp,i):
+def tokenize(temp):
     new_list=[]
     for i in range(len(temp)):
         string = str(temp[i])
@@ -19,7 +19,7 @@ def main():
     limit = int(input())
     for i in range(limit):
         temp = input().split(" ")
-        dic = tokenize(temp,i)
+        dic = tokenize(temp)
     print(dic)
 if __name__ == '__main__':
     main()
