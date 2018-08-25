@@ -5,7 +5,8 @@ each word
 def tokenize(temp):
     '''generate tokens'''
     new_list = []
-    for i in range(len(temp)):
+    length = len(temp)
+    for i in range(length):
         string = str(temp[i])
         string = string.strip('",.;')
         new_list.append(string)
