@@ -14,7 +14,7 @@ def tokenize(temp):
 def main():
     limit = int(input())
     for i in range(limit):
-    	temp = input().split(" ")
+    	temp = input().strip('",.;').split(" ")
     	dic = tokenize(temp)
     print(dic)
 if __name__ == '__main__':
