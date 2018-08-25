@@ -3,8 +3,14 @@ Write a function to tokenize a given string and return a dictionary with the fre
 each word
 '''
 def tokenize(temp):
+    new_list=[]
+    for i in range(len(temp)):
+        string = str(temp[i])
+        string = string.strip('",.;')
+        new_list.append(string)
+    print(new_list)
     dictionary = dict()
-    for i in temp:
+    for i in new_list:
         if i in dictionary.keys():
             dictionary[i] += 1
         else:
@@ -13,7 +19,7 @@ def tokenize(temp):
 def main():
     limit = int(input())
     for i in range(limit):
-        temp = input().strip('",.;').split(" ")
+        temp = input().split(" ")
         dic = tokenize(temp)
     print(dic)
 if __name__ == '__main__':
