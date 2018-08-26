@@ -46,7 +46,7 @@ def delete_person(network, arg1):
     for i in network.values():
     	if(arg1 in i):
     		i.remove(arg1)
-    del myDict[arg1]
+    del network[arg1]
     return network
 
 def main():
