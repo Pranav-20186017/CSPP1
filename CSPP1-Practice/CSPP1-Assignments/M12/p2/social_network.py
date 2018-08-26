@@ -13,10 +13,10 @@ def follow(network, arg1, arg2):
         so, this should result in adding arg2 to the followers list of arg1
         update the network dictionary and return it
     '''
-    if(arg1 in network):
-    	network[arg1].append(arg2)
+    if arg1 in network:
+        network[arg1].append(arg2)
     else:
-    	network[arg1] = [arg2,]
+        network[arg1] = [arg2,]
     return network
   
 
@@ -44,12 +44,11 @@ def delete_person(network, arg1):
         update the network dictionary and return it
     '''
     for i in network.values():
-    	if(arg1 in i):
-    		i.remove(arg1)
-    if(arg1 in network):
-    	del network[arg1]
+        if(arg1 in i):
+            i.remove(arg1)
+    if arg1 in network:
+        del network[arg1]
     return network
-
 def main():
     '''
         handling testcase input and printing output
