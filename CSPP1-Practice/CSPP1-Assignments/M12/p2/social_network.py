@@ -13,15 +13,9 @@ def follow(network, arg1, arg2):
         so, this should result in adding arg2 to the followers list of arg1
         update the network dictionary and return it
     '''
-    # remove the pass below and start writing your code
-    k = list(network.keys())
-    if arg1 not in k:
-        temp = []
-        temp.append(arg2)
-        network.update({arg1:temp})
-    else:
-        network[arg1].append(arg2)
+    network[arg1].append(arg2)
     return network
+  
 
 def unfollow(network, arg1, arg2):
     '''
@@ -32,9 +26,10 @@ def unfollow(network, arg1, arg2):
         so, this should result in removing arg2 from the followers list of arg1
         update the network dictionary and return it
     '''
-    # remove the pass below and start writing your code
+    
     network[arg1].remove(arg2)
     return network
+
 def delete_person(network, arg1):
     '''
         2 arguments are passed to this function
@@ -45,20 +40,11 @@ def delete_person(network, arg1):
         also, before deleting arg1, remove arg1 from the everyone's followers list
         update the network dictionary and return it
     '''
-    # remove the pass below and start writing your code
-    k = list(network.keys())
-    if arg1 in k:
-        del network[arg1]
-        return network
-    for i in k:
-        for j in range(0, len(network[i])-1):
-            if network[i][j] == arg1:
-                del network[i][j]
-    for i in k:
-        temp = (len(network[i]))
-        if temp == 1:
-            del network[i][0]
+    for i in network.values():
+    	i.remove(arg1)
+    del myDict[arg1]
     return network
+
 def main():
     '''
         handling testcase input and printing output
