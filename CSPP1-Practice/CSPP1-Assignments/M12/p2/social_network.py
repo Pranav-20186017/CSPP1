@@ -44,7 +44,8 @@ def delete_person(network, arg1):
         update the network dictionary and return it
     '''
     for i in network.values():
-    	i.remove(arg1)
+    	if(arg1 in i):
+    		i.remove(arg1)
     del myDict[arg1]
     return network
 
