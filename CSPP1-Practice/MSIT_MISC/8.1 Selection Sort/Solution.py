@@ -4,7 +4,7 @@ def selection_sort(array):
 		temp = min(array)
 		ind = array.index(temp)
 		b.append(temp)
-		del array[i]
+		del array[ind]
 	return b
 def main():
 	n = int(input())
