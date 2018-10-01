@@ -21,10 +21,11 @@ def selection_sort(array):
     result = string[:-2] + "]"
     return result
 def main():
-    n = int(input())
-    for i in range(n):
-        a = input().split(" ")
-        result = selection_sort(a)
+    '''Main function'''
+    number = int(input())
+    for i in range(number):
+        alphabet = input().split(" ")
+        result = selection_sort(alphabet)
         print(result)
 if __name__ == "__main__":
     main()
