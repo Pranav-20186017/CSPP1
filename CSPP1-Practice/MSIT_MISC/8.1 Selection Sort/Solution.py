@@ -9,8 +9,7 @@ def selection_sort(array):
     '''Function for selection sort'''
     basic = []
     string = "["
-    length = len(array)
-    for i in range(0, length):
+    for i in range(0, len(array)):
         i = i + 1
         temp = min(array)
         ind = array.index(temp)
