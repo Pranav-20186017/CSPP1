@@ -6,18 +6,19 @@ Encoding: utf-8
 **********************************
 '''
 def selection_sort(array):
-    b = []
-    st = "["
+    basic = []
+    string = "["
     length = len(array)
     for i in range(0, length):
+        i = i + 1
         temp = min(array)
         ind = array.index(temp)
-        b.append(temp)
+        basic.append(temp)
         del array[ind]
-    for i in range(0,len(b)):
-        st = st + b[i] + ", "
-    res = st[:-2] + "]"
-    return res
+    for i in range(0, len(basic)):
+        string = string + basic[i] + ", "
+    result = st[:-2] + "]"
+    return result
 def main():
     n = int(input())
     for i in range(n):
