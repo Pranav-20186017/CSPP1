@@ -17,7 +17,7 @@ def selection_sort(array):
         del array[ind]
     for i in range(0, len(basic)):
         string = string + basic[i] + ", "
-    result = st[:-2] + "]"
+    result = string[:-2] + "]"
     return result
 def main():
     n = int(input())
