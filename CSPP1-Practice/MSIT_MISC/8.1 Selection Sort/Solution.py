@@ -6,6 +6,7 @@ Encoding: utf-8
 **********************************
 '''
 def selection_sort(array):
+    '''Function for selection sort'''
     basic = []
     string = "["
     length = len(array)
