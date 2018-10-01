@@ -23,9 +23,11 @@ def selection_sort(array):
 def main():
     '''Main function'''
     number = int(input())
-    for i in range(number):
+    i = 0
+    while (i < number):
         alphabet = input().split(" ")
         result = selection_sort(alphabet)
         print(result)
+        i = i + 1
 if __name__ == "__main__":
     main()
