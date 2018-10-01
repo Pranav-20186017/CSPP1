@@ -16,7 +16,7 @@ def selection_sort(array):
         ind = array.index(temp)
         basic.append(temp)
         del array[ind]
-    for i in basic
+    for i in basic:
         string = string + i + ", "
     result = string[:-2] + "]"
     return result
