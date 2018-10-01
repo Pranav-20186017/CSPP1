@@ -24,7 +24,7 @@ def main():
     '''Main function'''
     number = int(input())
     i = 0
-    while (i < number):
+    while i < number:
         alphabet = input().split(" ")
         result = selection_sort(alphabet)
         print(result)
