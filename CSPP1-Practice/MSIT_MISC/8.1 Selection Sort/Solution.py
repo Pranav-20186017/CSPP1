@@ -9,14 +9,15 @@ def selection_sort(array):
     '''Function for selection sort'''
     basic = []
     string = "["
-    for i in range(0, len(array)):
+    length = len(array)
+    for i in range(0, length):
         i = i + 1
         temp = min(array)
         ind = array.index(temp)
         basic.append(temp)
         del array[ind]
-    for i in range(0, len(basic)):
-        string = string + basic[i] + ", "
+    for i in basic
+        string = string + i + ", "
     result = string[:-2] + "]"
     return result
 def main():
